@@ -17,4 +17,7 @@
 //= require angular-resource/angular-resource
 //= require angular-flash/dist/angular-flash
 //= require angular-rails-templates
+//= require angular-google-maps
+//= require angular-simple-logger
+//= require lodash/dist/lodash
 //= require_tree .
