@@ -11,10 +11,10 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
+.vendor
 
 # TODO Comment out these rules if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
-config/secrets.yml
 
 ## Environment normalization:
 /.bundle
@@ -27,7 +27,6 @@ config/secrets.yml
 .rvmrc
 
 # if using bower-rails ignore default bower_components path bower.json files
-/vendor/assets/bower_components
 *.bowerrc
 bower.json
 
