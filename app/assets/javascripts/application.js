@@ -19,5 +19,6 @@
 //= require angular-rails-templates
 //= require angular-google-maps
 //= require angular-simple-logger
+//= require angularjs-geolocation
 //= require lodash/dist/lodash
 //= require_tree .
