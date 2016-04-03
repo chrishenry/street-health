@@ -1,3 +1,7 @@
+== Street Health
+
+Application to display 311 and other complaint data. Check up on an address's history of complaints.
+
 == README
 
 This README would normally document whatever steps are necessary to get the
