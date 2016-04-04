@@ -5,7 +5,6 @@ Rails.application.routes.draw do
 
   resources :addresses, only: [:index]
 
-
   get 'help' => 'static_pages#help'
   get 'about' => 'static_pages#about'
 end
