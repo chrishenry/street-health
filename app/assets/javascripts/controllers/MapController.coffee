@@ -1,10 +1,11 @@
 controllers = angular.module('controllers')
 controllers.controller("MapController", [ '$scope', '$routeParams', '$resource', '$location', 'flash', 'geolocation',
   ($scope,$routeParams,$resource,$location, flash,geolocation)->
-    Address = $resource('/address/:addressString', { addressString: "@address", format: 'json' })
+    Address = $resource('/addresses/:addressString', { addressString: "@address", format: 'json' })
 
     if $routeParams.address
       $scope.address = $routeParams.address
+      Address.query(address: $routeParams.address, (results)-> $scope.address_results = results)
     else
       $scope.address = null
 
@@ -20,5 +21,5 @@ controllers.controller("MapController", [ '$scope', '$routeParams', '$resource',
 
     $scope.search = (address)->
       $location.path("/").search('address',address)
-
+      Address.query(address: address, (results)-> $scope.address_results = results)
 ])
