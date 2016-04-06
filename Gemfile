@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'dotenv-rails', :groups => [:development, :test]
 
 gem 'rails', '4.2.5.1'
 gem 'sass'
@@ -27,6 +28,7 @@ gem "foreman"
 gem 'angularjs-rails'
 gem 'angular-rails-templates'
 
+gem 'soda-ruby', :require => 'soda'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
