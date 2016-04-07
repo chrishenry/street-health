@@ -7,6 +7,9 @@ class AddressesController < ApplicationController
                   []
                 end
 
+    ActiveRecord::Base.logger.info @address.address
+    @address.update_service_requests()
+
   end
 
 end

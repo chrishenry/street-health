@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160407174606) do
+ActiveRecord::Schema.define(version: 20160407191316) do
 
   create_table "addresses", force: :cascade do |t|
     t.string   "address"
@@ -20,5 +20,17 @@ ActiveRecord::Schema.define(version: 20160407174606) do
     t.float    "latitude"
     t.float    "longitude"
   end
+
+  create_table "service_requests", force: :cascade do |t|
+    t.integer  "address_id"
+    t.string   "unique_key"
+    t.string   "complaint_type"
+    t.string   "descriptor"
+    t.datetime "created_date"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "service_requests", ["address_id"], name: "index_service_requests_on_address_id"
 
 end
