@@ -1,11 +1,11 @@
 class AddressesController < ApplicationController
 
-  def index
-    @addresses = if params[:address]
-                 Address.search_socrata(params[:address])
-               else
-                 []
-               end
+  def show
+    @address = if params[:address]
+                  Address.find_or_create_by(address: params[:address].upcase)
+                else
+                  []
+                end
 
   end
 

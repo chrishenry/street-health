@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  resources :addresses, only: [:index]
+  resources :addresses, only: [:show]
 
   get 'help' => 'static_pages#help'
   get 'about' => 'static_pages#about'

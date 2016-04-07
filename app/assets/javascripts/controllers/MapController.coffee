@@ -11,13 +11,13 @@ controllers.controller("MapController", [ '$scope', '$routeParams', '$resource',
 
     # Set up the map. Zoom to address if the browser allows it
     $scope.map = { center: { latitude: 40.7128, longitude: -74.0059 }, zoom: 12 }
-    geolocation.getLocation().then (data) ->
-      $scope.coords =
-        lat: data.coords.latitude
-        long: data.coords.longitude
-      # $scope.map.center = { latitude: data.coords.latitude, longitude: data.coords.longitude }
-      # $scope.map.zoom = 18
-      return
+    # geolocation.getLocation().then (data) ->
+    #   $scope.coords =
+    #     lat: data.coords.latitude
+    #     long: data.coords.longitude
+    #   $scope.map.center = { latitude: data.coords.latitude, longitude: data.coords.longitude }
+    #   $scope.map.zoom = 18
+    #   return
 
     $scope.search = (address)->
       $location.path("/").search('address',address)
