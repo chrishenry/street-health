@@ -1,0 +1,6 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+home:
+  address: 324 SPRING STREET
+  latitude: 40.6672285
+  longitude: -74.203738
