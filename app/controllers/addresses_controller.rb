@@ -1,15 +1,18 @@
 class AddressesController < ApplicationController
 
-  def show
-    @address = if params[:address]
-                  Address.find_or_create_by(address: params[:address].upcase)
-                else
-                  []
-                end
+  class AddressParams
+    def AddressParams.build(params)
+      params.require(:address)
+    end
+  end
 
-    ActiveRecord::Base.logger.info @address.address
-    @address.update_service_requests()
+  def show
+    ActiveRecord::Base.logger.info AddressParams.build(params)
+
+    @address = Address.find_or_create_by(address: AddressParams.build(params).upcase)
+    @address.update_service_requests() unless @address
 
   end
+
 
 end
