@@ -17,14 +17,17 @@ describe AddressesController do
 
     subject(:results) { JSON.parse(response.body) }
 
-    # def extract_name
-    #   ->(object) { object["address"] }
-    # end
-
     context "when the search finds results" do
       let(:address) { '324 spring street' }
       it 'should 200' do
         expect(response.status).to eq(200)
+      end
+    end
+
+    context "when there is an invalid address" do
+      let(:address) { 'not a real address' }
+      it 'should 404' do
+        expect(response.status).to eq(404)
       end
     end
 
