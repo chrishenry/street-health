@@ -10,9 +10,10 @@ describe AddressesController do
 
   describe "show" do
     before do
-      Address.create!(address: '324 SPRING STREET')
-
-      xhr :get, :show, format: :json, address: address
+      VCR.use_cassette("geolocate", :record => :new_episodes, :match_requests_on => [:method, :host, :path], :allow_playback_repeats => true) do
+        Address.create!(address: '324 SPRING STREET, NY')
+        xhr :get, :show, format: :json, address: address
+      end
     end
 
     subject(:results) { JSON.parse(response.body) }

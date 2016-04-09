@@ -1,0 +1,1039 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=324%20SPRING%20STREET,%20NY&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 09 Apr 2016 04:26:25 GMT
+      Expires:
+      - Sun, 10 Apr 2016 04:26:25 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '615'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Lower Manhattan",
+                       "short_name" : "Lower Manhattan",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Manhattan",
+                       "short_name" : "Manhattan",
+                       "types" : [ "sublocality_level_1", "sublocality", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "New York",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New York County",
+                       "short_name" : "New York County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "NY",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "10013",
+                       "short_name" : "10013",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "1394",
+                       "short_name" : "1394",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, New York, NY 10013, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.725921,
+                          "lng" : -74.009372
+                       },
+                       "southwest" : {
+                          "lat" : 40.7257557,
+                          "lng" : -74.00946689999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 40.7258383,
+                       "lng" : -74.0094194
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.72718733029149,
+                          "lng" : -74.00807046970849
+                       },
+                       "southwest" : {
+                          "lat" : 40.7244893697085,
+                          "lng" : -74.01076843029151
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJmbbkCfNZwokR63yktjHmILM",
+                 "types" : [ "premise" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Sat, 09 Apr 2016 04:26:25 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=324%20spring%20street,%20New%20York&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 09 Apr 2016 04:26:25 GMT
+      Expires:
+      - Sun, 10 Apr 2016 04:26:25 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '615'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Lower Manhattan",
+                       "short_name" : "Lower Manhattan",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Manhattan",
+                       "short_name" : "Manhattan",
+                       "types" : [ "sublocality_level_1", "sublocality", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "New York",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New York County",
+                       "short_name" : "New York County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "NY",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "10013",
+                       "short_name" : "10013",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "1394",
+                       "short_name" : "1394",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, New York, NY 10013, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.725921,
+                          "lng" : -74.009372
+                       },
+                       "southwest" : {
+                          "lat" : 40.7257557,
+                          "lng" : -74.00946689999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 40.7258383,
+                       "lng" : -74.0094194
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.72718733029149,
+                          "lng" : -74.00807046970849
+                       },
+                       "southwest" : {
+                          "lat" : 40.7244893697085,
+                          "lng" : -74.01076843029151
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJmbbkCfNZwokR63yktjHmILM",
+                 "types" : [ "premise" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Sat, 09 Apr 2016 04:26:25 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=324%20SPRING%20STREET&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 09 Apr 2016 04:26:25 GMT
+      Expires:
+      - Sun, 10 Apr 2016 04:26:25 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '2284'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Elizabeth",
+                       "short_name" : "Elizabeth",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Union County",
+                       "short_name" : "Union County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New Jersey",
+                       "short_name" : "NJ",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "07201",
+                       "short_name" : "07201",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Elizabeth, NJ 07201, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.6672346,
+                          "lng" : -74.203738
+                       },
+                       "southwest" : {
+                          "lat" : 40.6672285,
+                          "lng" : -74.203755
+                       }
+                    },
+                    "location" : {
+                       "lat" : 40.6672285,
+                       "lng" : -74.203738
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.6685805302915,
+                          "lng" : -74.2023975197085
+                       },
+                       "southwest" : {
+                          "lat" : 40.6658825697085,
+                          "lng" : -74.20509548029152
+                       }
+                    }
+                 },
+                 "place_id" : "EiczMjQgU3ByaW5nIFN0LCBFbGl6YWJldGgsIE5KIDA3MjAxLCBVU0E",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Central Business District",
+                       "short_name" : "Central Business District",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Seattle",
+                       "short_name" : "Seattle",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "King County",
+                       "short_name" : "King County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Washington",
+                       "short_name" : "WA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "98154",
+                       "short_name" : "98154",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Seattle, WA 98154, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 47.606462,
+                          "lng" : -122.3343926
+                       },
+                       "southwest" : {
+                          "lat" : 47.6064512,
+                          "lng" : -122.3344024
+                       }
+                    },
+                    "location" : {
+                       "lat" : 47.606462,
+                       "lng" : -122.3344024
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 47.6078055802915,
+                          "lng" : -122.3330485197085
+                       },
+                       "southwest" : {
+                          "lat" : 47.6051076197085,
+                          "lng" : -122.3357464802915
+                       }
+                    }
+                 },
+                 "place_id" : "EiUzMjQgU3ByaW5nIFN0LCBTZWF0dGxlLCBXQSA5ODE1NCwgVVNB",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Herndon",
+                       "short_name" : "Herndon",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Dranesville",
+                       "short_name" : "Dranesville",
+                       "types" : [ "administrative_area_level_3", "political" ]
+                    },
+                    {
+                       "long_name" : "Fairfax County",
+                       "short_name" : "Fairfax County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Virginia",
+                       "short_name" : "VA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "20170",
+                       "short_name" : "20170",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Herndon, VA 20170, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 38.9606397,
+                          "lng" : -77.37810739999999
+                       },
+                       "southwest" : {
+                          "lat" : 38.9606265,
+                          "lng" : -77.37811529999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 38.9606397,
+                       "lng" : -77.37810739999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 38.9619820802915,
+                          "lng" : -77.3767623697085
+                       },
+                       "southwest" : {
+                          "lat" : 38.9592841197085,
+                          "lng" : -77.37946033029151
+                       }
+                    }
+                 },
+                 "place_id" : "EiUzMjQgU3ByaW5nIFN0LCBIZXJuZG9uLCBWQSAyMDE3MCwgVVNB",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "West End",
+                       "short_name" : "West End",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Portland",
+                       "short_name" : "Portland",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Cumberland County",
+                       "short_name" : "Cumberland County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Maine",
+                       "short_name" : "ME",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "04102",
+                       "short_name" : "04102",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "3625",
+                       "short_name" : "3625",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Portland, ME 04102, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 43.6472168,
+                          "lng" : -70.26953739999999
+                       },
+                       "southwest" : {
+                          "lat" : 43.6472057,
+                          "lng" : -70.26954809999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 43.6472057,
+                       "lng" : -70.26953739999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 43.64856023029149,
+                          "lng" : -70.26819376970847
+                       },
+                       "southwest" : {
+                          "lat" : 43.6458622697085,
+                          "lng" : -70.2708917302915
+                       }
+                    }
+                 },
+                 "place_id" : "EiYzMjQgU3ByaW5nIFN0LCBQb3J0bGFuZCwgTUUgMDQxMDIsIFVTQQ",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Charleston",
+                       "short_name" : "Charleston",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Charleston County",
+                       "short_name" : "Charleston County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "South Carolina",
+                       "short_name" : "SC",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "29403",
+                       "short_name" : "29403",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "5102",
+                       "short_name" : "5102",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Charleston, SC 29403, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 32.7854336,
+                          "lng" : -79.9563706
+                       },
+                       "southwest" : {
+                          "lat" : 32.7854202,
+                          "lng" : -79.95638050000001
+                       }
+                    },
+                    "location" : {
+                       "lat" : 32.7854336,
+                       "lng" : -79.95638050000001
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 32.78677588029149,
+                          "lng" : -79.95502656970849
+                       },
+                       "southwest" : {
+                          "lat" : 32.78407791970849,
+                          "lng" : -79.95772453029151
+                       }
+                    }
+                 },
+                 "place_id" : "EigzMjQgU3ByaW5nIFN0LCBDaGFybGVzdG9uLCBTQyAyOTQwMywgVVNB",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Paso Robles",
+                       "short_name" : "Paso Robles",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "San Luis Obispo County",
+                       "short_name" : "San Luis Obispo County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "California",
+                       "short_name" : "CA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "93446",
+                       "short_name" : "93446",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "3167",
+                       "short_name" : "3167",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Paso Robles, CA 93446, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 35.6180335,
+                          "lng" : -120.6906269
+                       },
+                       "southwest" : {
+                          "lat" : 35.6180261,
+                          "lng" : -120.6906433
+                       }
+                    },
+                    "location" : {
+                       "lat" : 35.6180335,
+                       "lng" : -120.6906269
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 35.6193787802915,
+                          "lng" : -120.6892861197085
+                       },
+                       "southwest" : {
+                          "lat" : 35.6166808197085,
+                          "lng" : -120.6919840802915
+                       }
+                    }
+                 },
+                 "place_id" : "EikzMjQgU3ByaW5nIFN0LCBQYXNvIFJvYmxlcywgQ0EgOTM0NDYsIFVTQQ",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Galena",
+                       "short_name" : "Galena",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "West Galena Township",
+                       "short_name" : "West Galena Township",
+                       "types" : [ "administrative_area_level_3", "political" ]
+                    },
+                    {
+                       "long_name" : "Jo Daviess County",
+                       "short_name" : "Jo Daviess County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Illinois",
+                       "short_name" : "IL",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "61036",
+                       "short_name" : "61036",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "2128",
+                       "short_name" : "2128",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Galena, IL 61036, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 42.411774,
+                          "lng" : -90.4327497
+                       },
+                       "southwest" : {
+                          "lat" : 42.4116456,
+                          "lng" : -90.43293560000001
+                       }
+                    },
+                    "location" : {
+                       "lat" : 42.4117098,
+                       "lng" : -90.4328426
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 42.4130587802915,
+                          "lng" : -90.4314936697085
+                       },
+                       "southwest" : {
+                          "lat" : 42.4103608197085,
+                          "lng" : -90.43419163029151
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJbx4KlOrP4ocR4Ax_3BVmU68",
+                 "types" : [ "premise" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Titusville",
+                       "short_name" : "Titusville",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Crawford County",
+                       "short_name" : "Crawford County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Pennsylvania",
+                       "short_name" : "PA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "16354",
+                       "short_name" : "16354",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Titusville, PA 16354, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 41.6315454,
+                          "lng" : -79.68717769999999
+                       },
+                       "southwest" : {
+                          "lat" : 41.631533,
+                          "lng" : -79.6871865
+                       }
+                    },
+                    "location" : {
+                       "lat" : 41.6315454,
+                       "lng" : -79.68717769999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 41.63288818029149,
+                          "lng" : -79.68583311970851
+                       },
+                       "southwest" : {
+                          "lat" : 41.6301902197085,
+                          "lng" : -79.68853108029151
+                       }
+                    }
+                 },
+                 "place_id" : "EigzMjQgU3ByaW5nIFN0LCBUaXR1c3ZpbGxlLCBQQSAxNjM1NCwgVVNB",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Heath Springs",
+                       "short_name" : "Heath Springs",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Lancaster County",
+                       "short_name" : "Lancaster County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "South Carolina",
+                       "short_name" : "SC",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "29058",
+                       "short_name" : "29058",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Heath Springs, SC 29058, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 34.5888656,
+                          "lng" : -80.66457729999999
+                       },
+                       "southwest" : {
+                          "lat" : 34.588851,
+                          "lng" : -80.66458349999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 34.5888656,
+                       "lng" : -80.66457729999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 34.5902072802915,
+                          "lng" : -80.66323141970848
+                       },
+                       "southwest" : {
+                          "lat" : 34.5875093197085,
+                          "lng" : -80.6659293802915
+                       }
+                    }
+                 },
+                 "place_id" : "EiszMjQgU3ByaW5nIFN0LCBIZWF0aCBTcHJpbmdzLCBTQyAyOTA1OCwgVVNB",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "White Springs",
+                       "short_name" : "White Springs",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Hamilton County",
+                       "short_name" : "Hamilton County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Florida",
+                       "short_name" : "FL",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "32096",
+                       "short_name" : "32096",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, White Springs, FL 32096, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 30.3298556,
+                          "lng" : -82.7599388
+                       },
+                       "southwest" : {
+                          "lat" : 30.3298399,
+                          "lng" : -82.7599433
+                       }
+                    },
+                    "location" : {
+                       "lat" : 30.3298556,
+                       "lng" : -82.7599388
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 30.3311967302915,
+                          "lng" : -82.7585920697085
+                       },
+                       "southwest" : {
+                          "lat" : 30.3284987697085,
+                          "lng" : -82.76129003029151
+                       }
+                    }
+                 },
+                 "place_id" : "EiszMjQgU3ByaW5nIFN0LCBXaGl0ZSBTcHJpbmdzLCBGTCAzMjA5NiwgVVNB",
+                 "types" : [ "street_address" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Sat, 09 Apr 2016 04:26:25 GMT
+recorded_with: VCR 3.0.1

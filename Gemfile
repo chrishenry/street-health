@@ -62,6 +62,9 @@ group :development do
   gem 'teaspoon-jasmine'
   gem 'phantomjs'
 
+  gem "webmock"
+  gem "vcr"
+
 end
 
 group :production do
