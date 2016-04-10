@@ -5,6 +5,50 @@ class Address < ActiveRecord::Base
   geocoded_by :address
   after_validation :geocode
 
+  def Address.find_or_create_by_address(address)
+
+    address = address.upcase
+
+    # Pretty inefficient, as this will query, and then the geocoded_by will make a call
+    # TODO: actually use the info from the geo query response
+    geo_query = GeocoderService.new.query(address + ", NY")
+
+    require 'pp'
+    ActiveRecord::Base.logger.info pp(geo_query)
+
+    # geo_query[0].data needs to have a street_number or route type address component
+    if geo_query.length == 0
+      return false
+    end
+
+    # TODO: consider iterating through results for a best match
+    # TODO: break this logic out into it's own, more testable function
+    best_match = geo_query[0]
+    # ActiveRecord::Base.logger.info pp(best_match)
+
+    if not best_match.data.has_key?('address_components')
+      return false
+    end
+
+    ActiveRecord::Base.logger.info pp(best_match.data)
+    req_count = 0
+    required_address_components = %w{route street_number neighborhood postal_code}
+    required_address_components.each do |req|
+      best_match.data['address_components'].each do |ac|
+        if ac['types'].include?(req)
+          req_count += 1
+          break
+        end
+      end
+    end
+
+    if req_count < required_address_components.length
+      return false
+    end
+
+    self.find_or_create_by(address: address)
+  end
+
   def update_service_requests
     ActiveRecord::Base.logger.info "update_service_requests"
     ActiveRecord::Base.logger.info self.address
