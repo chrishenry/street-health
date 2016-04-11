@@ -41,6 +41,11 @@ group :development, :test do
   gem 'faker', '1.4.2'
 end
 
+group :test do
+  gem "webmock"
+  gem "vcr"
+end
+
 group :development do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'

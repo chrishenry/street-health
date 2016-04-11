@@ -1,0 +1,3281 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=324%20SPRING%20STREET&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 11 Apr 2016 19:19:59 GMT
+      Expires:
+      - Tue, 12 Apr 2016 19:19:59 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '2284'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Elizabeth",
+                       "short_name" : "Elizabeth",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Union County",
+                       "short_name" : "Union County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New Jersey",
+                       "short_name" : "NJ",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "07201",
+                       "short_name" : "07201",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Elizabeth, NJ 07201, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.6672346,
+                          "lng" : -74.203738
+                       },
+                       "southwest" : {
+                          "lat" : 40.6672285,
+                          "lng" : -74.203755
+                       }
+                    },
+                    "location" : {
+                       "lat" : 40.6672285,
+                       "lng" : -74.203738
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.6685805302915,
+                          "lng" : -74.2023975197085
+                       },
+                       "southwest" : {
+                          "lat" : 40.6658825697085,
+                          "lng" : -74.20509548029152
+                       }
+                    }
+                 },
+                 "place_id" : "EiczMjQgU3ByaW5nIFN0LCBFbGl6YWJldGgsIE5KIDA3MjAxLCBVU0E",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Central Business District",
+                       "short_name" : "Central Business District",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Seattle",
+                       "short_name" : "Seattle",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "King County",
+                       "short_name" : "King County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Washington",
+                       "short_name" : "WA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "98154",
+                       "short_name" : "98154",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Seattle, WA 98154, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 47.606462,
+                          "lng" : -122.3343926
+                       },
+                       "southwest" : {
+                          "lat" : 47.6064512,
+                          "lng" : -122.3344024
+                       }
+                    },
+                    "location" : {
+                       "lat" : 47.606462,
+                       "lng" : -122.3344024
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 47.6078055802915,
+                          "lng" : -122.3330485197085
+                       },
+                       "southwest" : {
+                          "lat" : 47.6051076197085,
+                          "lng" : -122.3357464802915
+                       }
+                    }
+                 },
+                 "place_id" : "EiUzMjQgU3ByaW5nIFN0LCBTZWF0dGxlLCBXQSA5ODE1NCwgVVNB",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Herndon",
+                       "short_name" : "Herndon",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Dranesville",
+                       "short_name" : "Dranesville",
+                       "types" : [ "administrative_area_level_3", "political" ]
+                    },
+                    {
+                       "long_name" : "Fairfax County",
+                       "short_name" : "Fairfax County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Virginia",
+                       "short_name" : "VA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "20170",
+                       "short_name" : "20170",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Herndon, VA 20170, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 38.9606397,
+                          "lng" : -77.37810739999999
+                       },
+                       "southwest" : {
+                          "lat" : 38.9606265,
+                          "lng" : -77.37811529999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 38.9606397,
+                       "lng" : -77.37810739999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 38.9619820802915,
+                          "lng" : -77.3767623697085
+                       },
+                       "southwest" : {
+                          "lat" : 38.9592841197085,
+                          "lng" : -77.37946033029151
+                       }
+                    }
+                 },
+                 "place_id" : "EiUzMjQgU3ByaW5nIFN0LCBIZXJuZG9uLCBWQSAyMDE3MCwgVVNB",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "West End",
+                       "short_name" : "West End",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Portland",
+                       "short_name" : "Portland",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Cumberland County",
+                       "short_name" : "Cumberland County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Maine",
+                       "short_name" : "ME",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "04102",
+                       "short_name" : "04102",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "3625",
+                       "short_name" : "3625",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Portland, ME 04102, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 43.6472168,
+                          "lng" : -70.26953739999999
+                       },
+                       "southwest" : {
+                          "lat" : 43.6472057,
+                          "lng" : -70.26954809999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 43.6472057,
+                       "lng" : -70.26953739999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 43.64856023029149,
+                          "lng" : -70.26819376970847
+                       },
+                       "southwest" : {
+                          "lat" : 43.6458622697085,
+                          "lng" : -70.2708917302915
+                       }
+                    }
+                 },
+                 "place_id" : "EiYzMjQgU3ByaW5nIFN0LCBQb3J0bGFuZCwgTUUgMDQxMDIsIFVTQQ",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Charleston",
+                       "short_name" : "Charleston",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Charleston County",
+                       "short_name" : "Charleston County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "South Carolina",
+                       "short_name" : "SC",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "29403",
+                       "short_name" : "29403",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "5102",
+                       "short_name" : "5102",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Charleston, SC 29403, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 32.7854336,
+                          "lng" : -79.9563706
+                       },
+                       "southwest" : {
+                          "lat" : 32.7854202,
+                          "lng" : -79.95638050000001
+                       }
+                    },
+                    "location" : {
+                       "lat" : 32.7854336,
+                       "lng" : -79.95638050000001
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 32.78677588029149,
+                          "lng" : -79.95502656970849
+                       },
+                       "southwest" : {
+                          "lat" : 32.78407791970849,
+                          "lng" : -79.95772453029151
+                       }
+                    }
+                 },
+                 "place_id" : "EigzMjQgU3ByaW5nIFN0LCBDaGFybGVzdG9uLCBTQyAyOTQwMywgVVNB",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Paso Robles",
+                       "short_name" : "Paso Robles",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "San Luis Obispo County",
+                       "short_name" : "San Luis Obispo County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "California",
+                       "short_name" : "CA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "93446",
+                       "short_name" : "93446",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "3167",
+                       "short_name" : "3167",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Paso Robles, CA 93446, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 35.6180335,
+                          "lng" : -120.6906269
+                       },
+                       "southwest" : {
+                          "lat" : 35.6180261,
+                          "lng" : -120.6906433
+                       }
+                    },
+                    "location" : {
+                       "lat" : 35.6180335,
+                       "lng" : -120.6906269
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 35.6193787802915,
+                          "lng" : -120.6892861197085
+                       },
+                       "southwest" : {
+                          "lat" : 35.6166808197085,
+                          "lng" : -120.6919840802915
+                       }
+                    }
+                 },
+                 "place_id" : "EikzMjQgU3ByaW5nIFN0LCBQYXNvIFJvYmxlcywgQ0EgOTM0NDYsIFVTQQ",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Galena",
+                       "short_name" : "Galena",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "West Galena Township",
+                       "short_name" : "West Galena Township",
+                       "types" : [ "administrative_area_level_3", "political" ]
+                    },
+                    {
+                       "long_name" : "Jo Daviess County",
+                       "short_name" : "Jo Daviess County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Illinois",
+                       "short_name" : "IL",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "61036",
+                       "short_name" : "61036",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "2128",
+                       "short_name" : "2128",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Galena, IL 61036, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 42.411774,
+                          "lng" : -90.4327497
+                       },
+                       "southwest" : {
+                          "lat" : 42.4116456,
+                          "lng" : -90.43293560000001
+                       }
+                    },
+                    "location" : {
+                       "lat" : 42.4117098,
+                       "lng" : -90.4328426
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 42.4130587802915,
+                          "lng" : -90.4314936697085
+                       },
+                       "southwest" : {
+                          "lat" : 42.4103608197085,
+                          "lng" : -90.43419163029151
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJbx4KlOrP4ocR4Ax_3BVmU68",
+                 "types" : [ "premise" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Titusville",
+                       "short_name" : "Titusville",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Crawford County",
+                       "short_name" : "Crawford County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Pennsylvania",
+                       "short_name" : "PA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "16354",
+                       "short_name" : "16354",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Titusville, PA 16354, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 41.6315454,
+                          "lng" : -79.68717769999999
+                       },
+                       "southwest" : {
+                          "lat" : 41.631533,
+                          "lng" : -79.6871865
+                       }
+                    },
+                    "location" : {
+                       "lat" : 41.6315454,
+                       "lng" : -79.68717769999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 41.63288818029149,
+                          "lng" : -79.68583311970851
+                       },
+                       "southwest" : {
+                          "lat" : 41.6301902197085,
+                          "lng" : -79.68853108029151
+                       }
+                    }
+                 },
+                 "place_id" : "EigzMjQgU3ByaW5nIFN0LCBUaXR1c3ZpbGxlLCBQQSAxNjM1NCwgVVNB",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Heath Springs",
+                       "short_name" : "Heath Springs",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Lancaster County",
+                       "short_name" : "Lancaster County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "South Carolina",
+                       "short_name" : "SC",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "29058",
+                       "short_name" : "29058",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, Heath Springs, SC 29058, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 34.5888656,
+                          "lng" : -80.66457729999999
+                       },
+                       "southwest" : {
+                          "lat" : 34.588851,
+                          "lng" : -80.66458349999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 34.5888656,
+                       "lng" : -80.66457729999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 34.5902072802915,
+                          "lng" : -80.66323141970848
+                       },
+                       "southwest" : {
+                          "lat" : 34.5875093197085,
+                          "lng" : -80.6659293802915
+                       }
+                    }
+                 },
+                 "place_id" : "EiszMjQgU3ByaW5nIFN0LCBIZWF0aCBTcHJpbmdzLCBTQyAyOTA1OCwgVVNB",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "White Springs",
+                       "short_name" : "White Springs",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Hamilton County",
+                       "short_name" : "Hamilton County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Florida",
+                       "short_name" : "FL",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "32096",
+                       "short_name" : "32096",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, White Springs, FL 32096, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 30.3298556,
+                          "lng" : -82.7599388
+                       },
+                       "southwest" : {
+                          "lat" : 30.3298399,
+                          "lng" : -82.7599433
+                       }
+                    },
+                    "location" : {
+                       "lat" : 30.3298556,
+                       "lng" : -82.7599388
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 30.3311967302915,
+                          "lng" : -82.7585920697085
+                       },
+                       "southwest" : {
+                          "lat" : 30.3284987697085,
+                          "lng" : -82.76129003029151
+                       }
+                    }
+                 },
+                 "place_id" : "EiszMjQgU3ByaW5nIFN0LCBXaGl0ZSBTcHJpbmdzLCBGTCAzMjA5NiwgVVNB",
+                 "types" : [ "street_address" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Mon, 11 Apr 2016 19:19:59 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=324%20SPRING%20STREET,%20NY,%20New%20York&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 11 Apr 2016 19:19:59 GMT
+      Expires:
+      - Tue, 12 Apr 2016 19:19:59 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '615'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Lower Manhattan",
+                       "short_name" : "Lower Manhattan",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Manhattan",
+                       "short_name" : "Manhattan",
+                       "types" : [ "sublocality_level_1", "sublocality", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "New York",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New York County",
+                       "short_name" : "New York County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "NY",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "10013",
+                       "short_name" : "10013",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "1394",
+                       "short_name" : "1394",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, New York, NY 10013, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.725921,
+                          "lng" : -74.009372
+                       },
+                       "southwest" : {
+                          "lat" : 40.7257557,
+                          "lng" : -74.00946689999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 40.7258383,
+                       "lng" : -74.0094194
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.72718733029149,
+                          "lng" : -74.00807046970849
+                       },
+                       "southwest" : {
+                          "lat" : 40.7244893697085,
+                          "lng" : -74.01076843029151
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJmbbkCfNZwokR63yktjHmILM",
+                 "types" : [ "premise" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Mon, 11 Apr 2016 19:19:59 GMT
+- request:
+    method: get
+    uri: https://nycopendata.socrata.com/resource/erm2-nwe9.json?$limit=50&incident_address=324%20SPRING%20STREET
+    body:
+      encoding: UTF-8
+      string: 'null'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      X-App-Token:
+      - SIFt2ipCw5uKhaOCxSEl0HVee
+      User-Agent:
+      - soda-ruby/0.2.21 (Darwin/15.3.0; Ruby/2.1.2-p95)
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 11 Apr 2016 19:20:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Last-Modified:
+      - Sun, 10 Apr 2016 19:07:14 PDT
+      X-Soda2-Warning:
+      - X-SODA2-Fields, X-SODA2-Types, and X-SODA2-Legacy-Types are deprecated
+      X-Soda2-Fields:
+      - '["incident_zip","bridge_highway_segment","road_ramp","ferry_terminal_name","bridge_highway_direction","school_name","location","closed_date","complaint_type","school_not_found","street_name","city","park_borough","school_state","bridge_highway_name","taxi_company_borough","longitude","school_or_citywide_complaint","ferry_direction","community_board","created_date","school_address","status","facility_type","unique_key","agency_name","landmark","x_coordinate_state_plane","intersection_street_1","y_coordinate_state_plane","due_date","latitude","garage_lot_name",":created_at","school_code","school_city","address_type","intersection_street_2","school_number","resolution_action_updated_date","descriptor","vehicle_type","cross_street_2","cross_street_1","taxi_pick_up_location","resolution_description","school_zip",":updated_at","location_type","agency","borough","incident_address","school_phone_number","park_facility_name","school_region",":id"]'
+      X-Soda2-Types:
+      - '["text","text","text","text","text","text","location","calendar_date","text","text","text","text","text","text","text","text","number","text","text","text","calendar_date","text","text","text","text","text","text","number","text","number","calendar_date","number","text","meta_data","text","text","text","text","text","calendar_date","text","text","text","text","text","text","text","meta_data","text","text","text","text","text","text","text","meta_data"]'
+      X-Soda2-Legacy-Types:
+      - 'true'
+      X-Socrata-Region:
+      - production
+      Age:
+      - '2'
+    body:
+      encoding: UTF-8
+      string: |-
+        [ {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796",
+            "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+          },
+          "closed_date" : "2012-02-18T01:51:32",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2012-02-18T00:10:16",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "22734510",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2012-02-18T08:10:16",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2012-02-18T01:51:32",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and determined that police action was not necessary.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796",
+            "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+          },
+          "closed_date" : "2012-03-11T01:28:04",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2012-03-11T00:41:22",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "22857709",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2012-03-11T08:41:22",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2012-03-11T01:27:21",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and determined that police action was not necessary.",
+          "school_zip" : "Unspecified",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2012-06-09T21:30:00",
+          "complaint_type" : "Noise",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2012-05-25T08:49:00",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "N/A",
+          "unique_key" : "23301036",
+          "agency_name" : "Department of Environmental Protection",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2012-06-09T21:30:00",
+          "descriptor" : "Noise: Other Noise Sources (Use Comments) (NZZ)",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "school_zip" : "Unspecified",
+          "agency" : "DEP",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796",
+            "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+          },
+          "closed_date" : "2012-10-14T03:48:24",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2012-10-14T02:59:48",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "24200857",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2012-10-14T10:59:48",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2012-10-14T03:48:24",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2012-12-20T00:55:00",
+          "complaint_type" : "Water System",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2012-12-19T23:37:00",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "N/A",
+          "unique_key" : "24626030",
+          "agency_name" : "Department of Environmental Protection",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2012-12-20T00:55:00",
+          "descriptor" : "Leak (Use Comments) (WA2)",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "school_zip" : "Unspecified",
+          "agency" : "DEP",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2012-12-20T00:05:00",
+          "complaint_type" : "Water System",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2012-12-19T23:57:00",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "N/A",
+          "unique_key" : "24625267",
+          "agency_name" : "Department of Environmental Protection",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2012-12-20T00:05:00",
+          "descriptor" : "Leak (Use Comments) (WA2)",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "school_zip" : "Unspecified",
+          "agency" : "DEP",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796",
+            "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+          },
+          "closed_date" : "2013-01-12T02:33:56",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2013-01-12T01:06:48",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "24766705",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2013-01-12T09:06:48",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2013-01-12T02:33:23",
+          "descriptor" : "Loud Talking",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and determined that police action was not necessary.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796",
+            "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+          },
+          "closed_date" : "2013-12-07T01:25:22",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2013-12-07T00:19:30",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "26828554",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2013-12-07T08:19:30",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2013-12-07T01:24:38",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and determined that police action was not necessary.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2014-03-02T01:51:35",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2014-03-02T00:33:52",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "27553069",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2014-03-02T08:33:52",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2014-03-02T01:51:30",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and took action to fix the condition.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2014-10-18T15:43:09",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2014-10-18T14:37:08",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "29096078",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2014-10-18T22:37:08",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2014-10-18T15:43:09",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and took action to fix the condition.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2014-12-14T06:02:08",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2014-12-14T02:04:16",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "29493738",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2014-12-14T10:04:16",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2014-12-14T06:02:08",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2015-01-01T08:11:05",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2015-01-01T00:34:40",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "29612845",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2015-01-01T08:34:40",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2015-01-01T08:11:05",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and took action to fix the condition.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2015-01-11T02:16:11",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2015-01-11T01:36:02",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "29688277",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2015-01-11T09:36:02",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2015-01-11T02:16:11",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and determined that police action was not necessary.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796",
+            "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+          },
+          "closed_date" : "2015-01-30T00:00:00",
+          "complaint_type" : "HEAT/HOT WATER",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2015-01-26T00:00:00",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "N/A",
+          "unique_key" : "29793224",
+          "agency_name" : "Department of Housing Preservation and Development",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2015-01-30T00:00:00",
+          "descriptor" : "ENTIRE BUILDING",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Department of Housing Preservation and Development was not able to gain access to inspect the following conditions. The complaint has been closed. If the condition still exists, please file a new complaint.",
+          "school_zip" : "Unspecified",
+          "location_type" : "RESIDENTIAL BUILDING",
+          "agency" : "HPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796",
+            "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+          },
+          "closed_date" : "2015-01-28T00:00:00",
+          "complaint_type" : "ELECTRIC",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2015-01-26T00:00:00",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "N/A",
+          "unique_key" : "29799270",
+          "agency_name" : "Department of Housing Preservation and Development",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2015-01-28T00:00:00",
+          "descriptor" : "POWER OUTAGE",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Department of Housing Preservation and Development contacted an occupant of the apartment and verified that the following conditions were corrected. The complaint has been closed. If the condition still exists, please file a new complaint.",
+          "school_zip" : "Unspecified",
+          "location_type" : "RESIDENTIAL BUILDING",
+          "agency" : "HPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2015-02-27T23:49:46",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2015-02-27T23:06:37",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "30061023",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2015-02-28T07:06:37",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2015-02-27T23:49:46",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and determined that police action was not necessary.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2015-04-26T05:02:39",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2015-04-26T01:19:53",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "30482491",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2015-04-26T09:19:53",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2015-04-26T05:02:39",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2015-07-21T10:33:54",
+          "complaint_type" : "Consumer Complaint",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2015-07-17T09:36:48",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "N/A",
+          "unique_key" : "31100669",
+          "agency_name" : "Department of Consumer Affairs",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2015-08-26T10:33:38",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2015-07-21T10:33:54",
+          "descriptor" : "Unlicensed",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Department of Consumer Affairs is scheduling an inspection which will take place within 35 days. Please do not file duplicate complaints or call to check results during this time. After 35 days, call 311 with your Service Request Number and ask for Service Request Status - DCA.",
+          "school_zip" : "Unspecified",
+          "agency" : "DCA",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2015-08-26T11:34:23",
+          "complaint_type" : "Consumer Complaint",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2015-08-24T14:59:56",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "N/A",
+          "unique_key" : "31378983",
+          "agency_name" : "Department of Consumer Affairs",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2015-08-28T14:59:56",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2015-08-26T11:34:23",
+          "descriptor" : "Unlicensed",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "Unfortunately, the behavior that you complained about does not violate any law or rule. As a result, no city agency has the jurisdiction to act on the matter.",
+          "school_zip" : "Unspecified",
+          "agency" : "DCA",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2015-10-04T01:18:56",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2015-10-03T23:33:25",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "31672927",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2015-10-04T07:33:25",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2015-10-04T01:18:56",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2015-10-11T06:15:08",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2015-10-11T01:37:30",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "31724903",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2015-10-11T09:37:30",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2015-10-11T06:15:08",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and determined that police action was not necessary.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2015-10-11T06:15:19",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2015-10-10T23:33:59",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "31723161",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2015-10-11T07:33:59",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2015-10-11T06:15:19",
+          "descriptor" : "Banging/Pounding",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and determined that police action was not necessary.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2015-10-17T02:10:07",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2015-10-17T01:16:12",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "31763794",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2015-10-17T09:16:12",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2015-10-17T02:10:07",
+          "descriptor" : "Banging/Pounding",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2015-10-17T02:10:08",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2015-10-17T01:14:32",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "31763056",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2015-10-17T09:14:32",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2015-10-17T02:10:08",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2015-10-21T03:04:23",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2015-10-20T23:05:45",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "31803098",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2015-10-21T07:05:45",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2015-10-21T03:03:58",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2016-01-09T00:44:35",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-01-08T23:29:02",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32372524",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2016-01-09T07:29:02",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-01-09T00:44:35",
+          "descriptor" : "Banging/Pounding",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and took action to fix the condition.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2016-02-21T03:41:41",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-02-21T01:45:28",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32729973",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2016-02-21T09:45:28",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-02-21T03:41:41",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and determined that police action was not necessary.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2016-02-28T03:17:31",
+          "complaint_type" : "Drinking",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-02-28T00:30:40",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32786079",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2016-02-28T08:30:40",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-02-28T03:17:31",
+          "descriptor" : "Underage - Licensed Est",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2016-02-28T03:17:33",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-02-28T01:10:08",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32783059",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2016-02-28T09:10:08",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-02-28T03:17:33",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "complaint_type" : "Food Establishment",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-04T13:10:46",
+          "school_address" : "Unspecified",
+          "status" : "Assigned",
+          "facility_type" : "N/A",
+          "unique_key" : "32828998",
+          "agency_name" : "Department of Health and Mental Hygiene",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-05-03T13:10:46",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-04T15:40:37",
+          "descriptor" : "Rodents/Insects/Garbage",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Department of Health and Mental Hygiene has sent official written notification to the Owner/Landlord warning them of potential violations and instructing them to correct the situation.  If the situation persists 21 days after your initial complaint, please make a new complaint.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Restaurant/Bar/Deli/Bakery",
+          "agency" : "DOHMH",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "complaint_type" : "Food Establishment",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-06T01:42:05",
+          "school_address" : "Unspecified",
+          "status" : "Assigned",
+          "facility_type" : "N/A",
+          "unique_key" : "32836022",
+          "agency_name" : "Department of Health and Mental Hygiene",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-05-05T01:42:05",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-07T15:59:55",
+          "descriptor" : "Food Spoiled",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Department of Health and Mental Hygiene has sent official written notification to the Owner/Landlord warning them of potential violations and instructing them to correct the situation.  If the situation persists 21 days after your initial complaint, please make a new complaint.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Restaurant/Bar/Deli/Bakery",
+          "agency" : "DOHMH",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2016-03-15T09:04:55",
+          "complaint_type" : "Food Poisoning",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-12T02:08:52",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "N/A",
+          "unique_key" : "32885609",
+          "agency_name" : "Department of Health and Mental Hygiene",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2016-03-26T02:08:54",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-15T09:04:55",
+          "descriptor" : "3 or More",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "Callers should contact the DOHMH Foodborne Illness unit directly at (646) 632-6103 weekdays from 9AM to 5PM.  DOHMH will review your complaint within 24 hours.  Complaints of this type usually result in complainant contact and/or inspection. Initial status will be available 14 days after the date of your complaint. If you are experiencing medical symptoms, please seek medical attention or consult the NYC Poison Control Center.  Please note your Service Request number for future reference.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Food Cart Vendor",
+          "agency" : "DOHMH",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "closed_date" : "2016-03-12T05:59:34",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-12T01:05:18",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32881287",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-03-12T09:05:18",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-12T05:59:34",
+          "descriptor" : "Banging/Pounding",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and took action to fix the condition.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "closed_date" : "2016-03-12T05:59:33",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-12T01:13:53",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32881278",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-03-12T09:13:53",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-12T05:59:34",
+          "descriptor" : "Banging/Pounding",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and took action to fix the condition.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "closed_date" : "2016-03-12T05:59:35",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-12T01:03:10",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32886549",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-03-12T09:03:10",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-12T05:59:35",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and took action to fix the condition.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "closed_date" : "2016-03-13T03:16:16",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-13T00:07:00",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32891914",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-03-13T08:07:00",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-13T03:16:16",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and took action to fix the condition.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "closed_date" : "2016-03-13T03:15:07",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-13T00:30:31",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32888226",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-03-13T08:30:31",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-13T03:15:08",
+          "descriptor" : "Banging/Pounding",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and took action to fix the condition.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2016-03-15T09:13:08",
+          "complaint_type" : "Food Poisoning",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-13T12:26:16",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "N/A",
+          "unique_key" : "32896710",
+          "agency_name" : "Department of Health and Mental Hygiene",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "due_date" : "2016-03-27T12:26:18",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-15T09:13:08",
+          "descriptor" : "1 or 2",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Department of Health and Mental Hygiene will review your complaint within 24 hours.  Complaints of this type usually result in complainant contact and/or inspection by the agency. Initial status will be available 14 days after the date of your complaint by calling 311. If you are experiencing medical symptoms, please seek medical attention or consult the NYC Poison Control Center which can be reached through 311.   Please note your Service Request number for future reference.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Restaurant/Bar/Deli/Bakery",
+          "agency" : "DOHMH",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "closed_date" : "2016-03-16T02:17:59",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-16T00:31:40",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32908317",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-03-16T08:31:40",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-16T02:17:59",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2016-03-18T16:05:00",
+          "complaint_type" : "Water System",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-18T15:56:00",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "N/A",
+          "unique_key" : "32933541",
+          "agency_name" : "Department of Environmental Protection",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-18T16:05:00",
+          "descriptor" : "Leak (Use Comments) (WA2)",
+          "cross_street_2" : "WASHINGTON ST",
+          "cross_street_1" : "GREENWICH ST",
+          "school_zip" : "Unspecified",
+          "agency" : "DEP",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00931188460676",
+            "latitude" : "40.726002604601796"
+          },
+          "closed_date" : "2016-03-18T20:50:00",
+          "complaint_type" : "Water System",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00931188460676",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-18T19:31:00",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "N/A",
+          "unique_key" : "32936028",
+          "agency_name" : "Department of Environmental Protection",
+          "x_coordinate_state_plane" : "981669",
+          "y_coordinate_state_plane" : "203779",
+          "latitude" : "40.726002604601796",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-18T20:50:00",
+          "descriptor" : "Possible Water Main Break (Use Comments) (WA1)",
+          "cross_street_2" : "WASHINGTON ST",
+          "cross_street_1" : "GREENWICH ST",
+          "school_zip" : "Unspecified",
+          "agency" : "DEP",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "complaint_type" : "Food Establishment",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-20T03:29:27",
+          "school_address" : "Unspecified",
+          "status" : "Open",
+          "facility_type" : "N/A",
+          "unique_key" : "32946687",
+          "agency_name" : "Department of Health and Mental Hygiene",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-03-23T03:29:27",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "descriptor" : "Water",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Department of Health and Mental Hygiene will review your complaint to determine appropriate action.  Complaints of this type may result in agency contact and/or investigation at the time of a routine inspection.  Status will be available 37 days after the date of your complaint by calling 311. Please note your Service Request number for future reference.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Restaurant/Bar/Deli/Bakery",
+          "agency" : "DOHMH",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "closed_date" : "2016-03-20T04:50:51",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-20T02:18:06",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32949010",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-03-20T10:18:06",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-20T04:50:51",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "closed_date" : "2016-03-26T03:58:00",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-25T23:56:30",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32986025",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-03-26T07:56:30",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-26T03:58:01",
+          "descriptor" : "Banging/Pounding",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and determined that police action was not necessary.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "closed_date" : "2016-03-26T03:58:15",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-26T01:37:29",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32990262",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-03-26T09:37:29",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-26T03:58:15",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and determined that police action was not necessary.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Store/Commercial",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00942370456511",
+            "latitude" : "40.72583516533112"
+          },
+          "complaint_type" : "Food Establishment",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00942370456511",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-26T14:30:22",
+          "school_address" : "Unspecified",
+          "status" : "Assigned",
+          "facility_type" : "N/A",
+          "unique_key" : "32993885",
+          "agency_name" : "Department of Health and Mental Hygiene",
+          "x_coordinate_state_plane" : "981638",
+          "y_coordinate_state_plane" : "203718",
+          "due_date" : "2016-05-25T14:30:22",
+          "latitude" : "40.72583516533112",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "LATLONG",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-28T16:00:20",
+          "descriptor" : "Pet/Animal",
+          "resolution_description" : "The Department of Health and Mental Hygiene has sent official written notification to the Owner/Landlord warning them of potential violations and instructing them to correct the situation.  If the situation persists 21 days after your initial complaint, please make a new complaint.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Restaurant/Bar/Deli/Bakery",
+          "agency" : "DOHMH",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "closed_date" : "2016-03-27T03:18:26",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-26T22:56:54",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32991315",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-03-27T06:56:54",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-27T03:18:26",
+          "descriptor" : "Banging/Pounding",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and determined that police action was not necessary.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Store/Commercial",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "closed_date" : "2016-03-27T03:18:16",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-26T23:48:31",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32993508",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-03-27T07:48:31",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-27T03:18:17",
+          "descriptor" : "Loud Music/Party",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and determined that police action was not necessary.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Club/Bar/Restaurant",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "closed_date" : "2016-03-27T03:18:14",
+          "complaint_type" : "Noise - Commercial",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-27T00:50:44",
+          "school_address" : "Unspecified",
+          "status" : "Closed",
+          "facility_type" : "Precinct",
+          "unique_key" : "32992012",
+          "agency_name" : "New York City Police Department",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-03-27T08:50:44",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-27T03:18:15",
+          "descriptor" : "Loud Talking",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Police Department responded to the complaint and determined that police action was not necessary.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Store/Commercial",
+          "agency" : "NYPD",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+        , {
+          "incident_zip" : "10013",
+          "school_name" : "Unspecified",
+          "location" : {
+            "needs_recoding" : false,
+            "longitude" : "-74.00930106064614",
+            "latitude" : "40.72599986071974"
+          },
+          "complaint_type" : "Food Establishment",
+          "school_not_found" : "N",
+          "street_name" : "SPRING STREET",
+          "city" : "NEW YORK",
+          "park_borough" : "MANHATTAN",
+          "school_state" : "Unspecified",
+          "longitude" : "-74.00930106064614",
+          "community_board" : "02 MANHATTAN",
+          "created_date" : "2016-03-28T14:38:08",
+          "school_address" : "Unspecified",
+          "status" : "Assigned",
+          "facility_type" : "N/A",
+          "unique_key" : "33005440",
+          "agency_name" : "Department of Health and Mental Hygiene",
+          "x_coordinate_state_plane" : "981672",
+          "y_coordinate_state_plane" : "203778",
+          "due_date" : "2016-05-27T14:38:08",
+          "latitude" : "40.72599986071974",
+          "school_code" : "Unspecified",
+          "school_city" : "Unspecified",
+          "address_type" : "ADDRESS",
+          "school_number" : "Unspecified",
+          "resolution_action_updated_date" : "2016-03-30T16:02:40",
+          "descriptor" : "Pet/Animal",
+          "cross_street_2" : "WASHINGTON STREET",
+          "cross_street_1" : "GREENWICH STREET",
+          "resolution_description" : "The Department of Health and Mental Hygiene has sent official written notification to the Owner/Landlord warning them of potential violations and instructing them to correct the situation.  If the situation persists 21 days after your initial complaint, please make a new complaint.",
+          "school_zip" : "Unspecified",
+          "location_type" : "Restaurant/Bar/Deli/Bakery",
+          "agency" : "DOHMH",
+          "borough" : "MANHATTAN",
+          "incident_address" : "324 SPRING STREET",
+          "school_phone_number" : "Unspecified",
+          "park_facility_name" : "Unspecified",
+          "school_region" : "Unspecified"
+        }
+         ]
+    http_version: 
+  recorded_at: Mon, 11 Apr 2016 19:20:00 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=NOT%20A%20REAL%20ADDRESS,%20NY,%20New%20York&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 11 Apr 2016 19:20:00 GMT
+      Expires:
+      - Tue, 12 Apr 2016 19:20:00 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '445'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "New York",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "NY",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "New York, NY, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.91525559999999,
+                          "lng" : -73.70027209999999
+                       },
+                       "southwest" : {
+                          "lat" : 40.4960439,
+                          "lng" : -74.25573489999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 40.7127837,
+                       "lng" : -74.0059413
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.91525559999999,
+                          "lng" : -73.70027209999999
+                       },
+                       "southwest" : {
+                          "lat" : 40.4960439,
+                          "lng" : -74.25573489999999
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJOwg_06VPwokRYv534QaPC8g",
+                 "types" : [ "locality", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Mon, 11 Apr 2016 19:20:00 GMT
+recorded_with: VCR 3.0.1

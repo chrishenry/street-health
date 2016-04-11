@@ -1,34 +1,41 @@
 require 'rails_helper'
 
 describe AddressesController do
-  render_views
-  describe "index" do
-    before do
-      Address.create!(address: '324 Spring St')
-      Address.create!(address: '532 Broadway')
-      Address.create!(address: '97 Macdougal St')
-      Address.create!(address: '10 Downing St')
 
-      xhr :get, :index, format: :json, address: address
+  describe "failing show" do
+    it "raises an exception" do
+      expect{ get(:show, {}) }.to raise_error ActionController::ParameterMissing
+    end
+
+    describe "when there is an invalid address" do
+      it 'should throw ActiveRecord::RecordNotFound' do
+
+        expect {
+          VCR.use_cassette("geolocate", :record => :new_episodes, :allow_playback_repeats => true) do
+            Address.create!(address: '324 SPRING STREET')
+            xhr :get, :show, format: :json, address: 'not a real address'
+          end
+        }.to raise_exception(ActiveRecord::RecordNotFound)
+
+      end
+    end
+  end
+
+  describe "show" do
+    before do
+      VCR.use_cassette("geolocate", :record => :new_episodes, :allow_playback_repeats => true) do
+        Address.create!(address: '324 SPRING STREET')
+        xhr :get, :show, format: :json, address: address
+      end
     end
 
     subject(:results) { JSON.parse(response.body) }
 
-    def extract_name
-      ->(object) { object["address"] }
-    end
-
     context "when the search finds results" do
-      let(:address) { 'spring' }
+      let(:address) { '324 spring street' }
       it 'should 200' do
         expect(response.status).to eq(200)
-      end
-    end
-
-    context "when the search doesn't find results" do
-      let(:address) { 'foo' }
-      it 'should return no results' do
-        expect(results.size).to eq(0)
+        expect(assigns(:address)).to_not be_nil
       end
     end
 

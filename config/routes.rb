@@ -3,7 +3,9 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  resources :addresses, only: [:show]
+  resources :addresses
+  get 'addresses/show/', to: 'addresses#show'
+  get 'addresses/show/:address', to: 'addresses#show'
 
   resources :addresses do
     resources :servicerequests
