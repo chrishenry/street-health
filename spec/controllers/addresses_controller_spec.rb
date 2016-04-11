@@ -19,8 +19,6 @@ describe AddressesController do
 
       end
     end
-
-
   end
 
   describe "show" do
@@ -37,6 +35,9 @@ describe AddressesController do
       let(:address) { '324 spring street' }
       it 'should 200' do
         expect(response.status).to eq(200)
+        expect(assigns(:address)).to_not be_nil
+
+        puts response.body
       end
     end
 
