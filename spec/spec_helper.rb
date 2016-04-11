@@ -17,10 +17,11 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
-# require 'webmock/rspec'
-# WebMock.disable_net_connect!(allow_localhost: true)
+require 'webmock/rspec'
+WebMock.disable_net_connect!(allow_localhost: true)
 
-# Dir[File.dirname(__FILE__) + "/support/**/*.rb"].each {|f| require f }
+# require other setup files
+Dir[File.dirname(__FILE__) + "/support/**/*.rb"].each {|f| require f }
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
