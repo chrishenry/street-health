@@ -36,8 +36,6 @@ describe AddressesController do
       it 'should 200' do
         expect(response.status).to eq(200)
         expect(assigns(:address)).to_not be_nil
-
-        puts response.body
       end
     end
 
