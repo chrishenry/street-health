@@ -11,9 +11,7 @@ class AddressesController < ApplicationController
     ActiveRecord::Base.logger.info AddressParams.build(params)
 
     @address = Address.find_or_create_by_address(AddressParams.build(params))
-    if @address
-      @address.update_service_requests()
-    end
+    @address.update_service_requests()
   end
 
 end

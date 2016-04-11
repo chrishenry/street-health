@@ -27,7 +27,7 @@ class Address < ActiveRecord::Base
     # ActiveRecord::Base.logger.info pp(best_match)
 
     if not best_match.data.has_key?('address_components')
-      return false
+      raise ActiveRecord::RecordNotFound
     end
 
     ActiveRecord::Base.logger.info pp(best_match.data)
@@ -43,7 +43,7 @@ class Address < ActiveRecord::Base
     end
 
     if req_count < required_address_components.length
-      return false
+      raise ActiveRecord::RecordNotFound
     end
 
     self.find_or_create_by(address: address)
