@@ -5,6 +5,25 @@ class Address < ActiveRecord::Base
   geocoded_by :address
   after_validation :geocode
 
+  def Address.validate_address_components(best_match)
+
+    req_count = 0
+    required_address_components = %w{route street_number neighborhood postal_code}
+    required_address_components.each do |req|
+      best_match.data['address_components'].each do |ac|
+        if ac['types'].include?(req)
+          req_count += 1
+          break
+        end
+      end
+    end
+
+    if req_count < required_address_components.length
+      raise ActiveRecord::RecordNotFound
+    end
+
+  end
+
   def Address.find_or_create_by_address(address)
 
     address = address.upcase
@@ -31,20 +50,7 @@ class Address < ActiveRecord::Base
     end
 
     ActiveRecord::Base.logger.info pp(best_match.data)
-    req_count = 0
-    required_address_components = %w{route street_number neighborhood postal_code}
-    required_address_components.each do |req|
-      best_match.data['address_components'].each do |ac|
-        if ac['types'].include?(req)
-          req_count += 1
-          break
-        end
-      end
-    end
-
-    if req_count < required_address_components.length
-      raise ActiveRecord::RecordNotFound
-    end
+    validate_address_components(best_match)
 
     self.find_or_create_by(address: address)
   end
@@ -85,7 +91,5 @@ class Address < ActiveRecord::Base
       self.address = address.upcase
     end
 
-    def geocode_validate
-    end
 
 end
