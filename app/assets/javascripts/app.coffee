@@ -3,7 +3,7 @@ receta = angular.module('receta',[
   'ngRoute',
   'ngResource',
   'controllers',
-  'uiGmapgoogle-maps',
+  'ngMap',
   'angular-flash.service',
   'angular-flash.flash-alert-directive',
   'geolocation'

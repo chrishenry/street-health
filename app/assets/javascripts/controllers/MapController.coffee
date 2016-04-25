@@ -1,6 +1,7 @@
-controllers = angular.module('controllers')
-controllers.controller("MapController", [ '$scope', '$routeParams', '$resource', '$location', 'flash', 'geolocation',
-  ($scope,$routeParams,$resource,$location, flash,geolocation)->
+controllers = angular.module('controllers', ['ngMap'])
+controllers.controller("MapController",
+  ['$scope', '$routeParams', '$resource', '$location', 'NgMap', 'flash', 'geolocation',
+  ($scope,$routeParams,$resource,$location, NgMap,flash,geolocation)->
     Address = $resource('/addresses', { addressString: "@address", format: 'json' })
 
     if $routeParams.address
@@ -9,17 +10,14 @@ controllers.controller("MapController", [ '$scope', '$routeParams', '$resource',
     else
       $scope.address = null
 
-    # Set up the map. Zoom to address if the browser allows it
-    $scope.map = { center: { latitude: 40.7128, longitude: -74.0059 }, zoom: 12 }
-    # geolocation.getLocation().then (data) ->
-    #   $scope.coords =
-    #     lat: data.coords.latitude
-    #     long: data.coords.longitude
-    #   $scope.map.center = { latitude: data.coords.latitude, longitude: data.coords.longitude }
-    #   $scope.map.zoom = 18
-    #   return
-
     $scope.search = (address)->
       $location.path("/").search('address',address)
+
+    NgMap.getMap().then((map)->
+      console.log("HERERR");
+      console.log(map.getCenter());
+      console.log('markers', map.markers);
+      console.log('shapes', map.shapes);
+    );
 
 ])
