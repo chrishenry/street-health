@@ -18,20 +18,27 @@ controllers.controller("MapController",
 
     # $interval(generateMarkers, 2000);
 
+    $scope.map = {
+      center: {
+        latitude: 40.7128,
+        longitude: -74.0059
+      },
+      zoom: 13
+    };
 
-    if $routeParams.address
-      $scope.address = $routeParams.address
-      $http({
-        url: '/addresses/show.json?address=' + $routeParams.address,
-        method: 'GET'
-      }).then((response)->
-        console.log(response.data)
+    # if $routeParams.address
+    #   $scope.address = $routeParams.address
+    #   $http({
+    #     url: '/addresses/show.json?address=' + $routeParams.address,
+    #     method: 'GET'
+    #   }).then((response)->
+    #     console.log(response.data)
 
-        pos = {pos: [response.data.latitude, response.data.longitude]}
-        console.log(pos)
-        $scope.positions.push(pos)
+    #     pos = {pos: [response.data.latitude, response.data.longitude]}
+    #     console.log(pos)
+    #     $scope.positions.push(pos)
 
-      )
+    #   )
 
 
       # address = Address.get(address: $routeParams.address, isArray: false, (address)->
