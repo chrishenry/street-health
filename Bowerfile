@@ -4,6 +4,6 @@ asset 'angular-resource'
 asset 'angular-mocks'
 asset 'angular-flash'
 asset 'bootstrap-sass-official'
-asset 'angular-google-maps'
 asset 'angularjs-geolocation'
+asset 'ngmap'
 # vim: ft=ruby

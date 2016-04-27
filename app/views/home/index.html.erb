@@ -1,8 +1,14 @@
 <% provide(:title, "Home") %>
 
 <div ng-app="receta">
-  <div class="view-container">
-    <div ng-view class="view-frame animate-view"></div>
-  </div>
+  <div ng-controller="MapController">
+    <div>{{msg}}</div>
+
+    <div class="view-container">
+      <div ng-view class="view-frame animate-view"></div>
+    </div>
+
+
+
 </div>
 

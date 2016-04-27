@@ -3,13 +3,12 @@ receta = angular.module('receta',[
   'ngRoute',
   'ngResource',
   'controllers',
-  'uiGmapgoogle-maps',
   'angular-flash.service',
   'angular-flash.flash-alert-directive',
-  'geolocation'
+  'ngMap',
 ])
 
-receta.config([ '$routeProvider', 'flashProvider',
+receta.config([ '$routeProvider','flashProvider',
   ($routeProvider,flashProvider)->
 
     flashProvider.errorClassnames.push("alert-danger")
@@ -21,17 +20,6 @@ receta.config([ '$routeProvider', 'flashProvider',
       .when('/',
         templateUrl: "index.html"
         controller: 'MapController'
-      ).when('/address/new',
-        templateUrl: "form.html",
-        controller: 'MapController'
-      ).when('/address/:addressId',
-        templateUrl: "show.html"
-        controller: 'MapController'
-      ).when('/address/:addressId/edit',
-        templateUrl: "form.html",
-        controller: 'MapController'
       )
 ])
-
-controllers = angular.module('controllers',[])
 

@@ -13,12 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require angular/angular
+//= require angular-flash/dist/angular-flash
 //= require angular-route/angular-route
 //= require angular-resource/angular-resource
-//= require angular-flash/dist/angular-flash
 //= require angular-rails-templates
-//= require angular-google-maps
-//= require angular-simple-logger
+//= require ngmap
 //= require angularjs-geolocation
-//= require lodash/dist/lodash
 //= require_tree .
