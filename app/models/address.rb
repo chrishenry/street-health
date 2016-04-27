@@ -2,7 +2,7 @@ class Address < ActiveRecord::Base
   has_many :service_requests
 
   before_save :upcase_address
-  geocoded_by :address
+  geocoded_by :geocode_address
   after_validation :geocode
 
   def Address.validate_address_components(best_match)
@@ -75,9 +75,14 @@ class Address < ActiveRecord::Base
           created_date: sr.created_date
         })
       end
-        ActiveRecord::Base.logger.info new_sr
 
+      ActiveRecord::Base.logger.info new_sr
     end
+
+  end
+
+  def geocode_address()
+    address + ", NY"
   end
 
   def self.search_socrata(address)
