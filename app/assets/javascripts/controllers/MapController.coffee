@@ -1,7 +1,7 @@
-controllers = angular.module('controllers', ['ngMap'])
+controllers = angular.module('controllers', ['uiGmapgoogle-maps'])
 controllers.controller("MapController",
-  ['$scope', '$routeParams',  '$location', '$http', '$resource', '$interval', 'flash', 'NgMap',
-  ($scope, $routeParams, $location, $http, $resource, $interval, flash, NgMap)->
+  ['$scope', '$routeParams',  '$location', '$http', '$resource', '$interval', 'flash',
+  ($scope, $routeParams, $location, $http, $resource, $interval, flash)->
     Address = $resource('/addresses/show.json', { addressString: "@address" })
 
     $scope.positions = [];
@@ -25,20 +25,45 @@ controllers.controller("MapController",
       },
       zoom: 13
     };
+    $scope.markers = []
 
-    # if $routeParams.address
-    #   $scope.address = $routeParams.address
-    #   $http({
-    #     url: '/addresses/show.json?address=' + $routeParams.address,
-    #     method: 'GET'
-    #   }).then((response)->
-    #     console.log(response.data)
+    if $routeParams.address
+      $scope.address = $routeParams.address
+      $http({
+        url: '/addresses/show.json?address=' + $routeParams.address,
+        method: 'GET'
+      }).then((response)->
+        console.log(response.data)
 
-    #     pos = {pos: [response.data.latitude, response.data.longitude]}
-    #     console.log(pos)
-    #     $scope.positions.push(pos)
+        pos = {pos: [response.data.latitude, response.data.longitude]}
+        console.log(pos)
+        $scope.positions.push(pos)
 
-    #   )
+        $scope.markers.push({
+          id: 0,
+          coords: {
+            latitude: response.data.latitude,
+            longitude: response.data.longitude
+          },
+          options: { draggable: true },
+          events: {
+            dragend: (marker, eventName, args)->
+              $log.log('marker dragend');
+              lat = marker.getPosition().lat();
+              lon = marker.getPosition().lng();
+              $log.log(lat);
+              $log.log(lon);
+
+              $scope.marker.options = {
+                draggable: true,
+                labelContent: "lat: " + $scope.marker.coords.latitude + ' ' + 'lon: ' + $scope.marker.coords.longitude,
+                labelAnchor: "100 0",
+                labelClass: "marker-labels"
+              };
+          }
+        });
+
+      )
 
 
       # address = Address.get(address: $routeParams.address, isArray: false, (address)->
