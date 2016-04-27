@@ -1,7 +1,7 @@
 controllers = angular.module('controllers', ['ngMap'])
 controllers.controller("MapController",
-  ['$scope', '$routeParams',  '$location', '$http', '$resource', '$interval', 'NgMap',
-  ($scope, $routeParams, $location, $http, $resource, $interval, NgMap)->
+  ['$scope', '$routeParams',  '$location', '$http', '$resource', '$interval', 'flash', 'NgMap',
+  ($scope, $routeParams, $location, $http, $resource, $interval, flash, NgMap)->
     Address = $resource('/addresses/show.json', { addressString: "@address" })
 
     $scope.positions = [];
