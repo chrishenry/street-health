@@ -1,3 +1,4 @@
 {
+  "interactive": false,
   "directory": "./vendor/assets/bower_components"
 }
