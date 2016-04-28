@@ -1,15 +1,29 @@
-<section class="row">
-  <form>
-    <div class="input-group col-md-6 col-md-offset-3">
-      <label for="address" class="sr-only">Address</label>
-      <input ng-model="address" name="address" type="text" autofocus class="form-control" placeholder="Enter an address. e.g. 671 Broadway">
-      <span class="input-group-btn">
-        <button ng-click="search(address)" class="btn btn-primary">Search</button>
-      </span>
+<div class="container-fluid">
+
+  <div class="row-fluid">
+
+    <div class="col-md-4">
+      <form>
+        <div class="input-group">
+          <label for="address" class="sr-only">Address</label>
+          <input ng-model="address" name="address" type="text" autofocus class="form-control" placeholder="Enter an address. e.g. 671 Broadway">
+          <span class="input-group-btn">
+            <button ng-click="search(address)" class="btn btn-primary">Search</button>
+          </span>
+        </div>
+      </form>
     </div>
-  </form>
-</section>
-<hr>
+
+    <div class="col-md-8">
+      <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+        <ui-gmap-marker ng-repeat="marker in markers" coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id"></ui-gmap-marker>
+      </ui-gmap-google-map>
+    </div>
+
+  </div>
+
+</div>
+
 
 <!-- <ul id="stuff">
   <li ng-repeat="pos in positions">
@@ -18,6 +32,4 @@
   </li>
 </ul> -->
 
-<ui-gmap-google-map center='map.center' zoom='map.zoom'>
-  <ui-gmap-marker ng-repeat="marker in markers" coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id"></ui-gmap-marker>
-</ui-gmap-google-map>
+
