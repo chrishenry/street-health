@@ -6,18 +6,6 @@ controllers.controller("MapController",
 
     $scope.positions = [];
 
-    # generateMarkers = ()->
-    #   $scope.positions = [];
-    #   numMarkers = Math.floor(Math.random() * 4) + 4;
-    #   for i in [0...numMarkers]
-    #     lat = 40.7128 + (Math.random() / 100);
-    #     lng = -74.0059 + (Math.random() / 100);
-    #     $scope.positions.push({pos:[lat,lng]});
-
-    #   console.log("$scope.positions", $scope.positions);
-
-    # $interval(generateMarkers, 2000);
-
     $scope.map = {
       center: {
         latitude: 40.7128,
@@ -45,39 +33,17 @@ controllers.controller("MapController",
             latitude: response.data.latitude,
             longitude: response.data.longitude
           },
-          options: { draggable: true },
-          events: {
-            dragend: (marker, eventName, args)->
-              $log.log('marker dragend');
-              lat = marker.getPosition().lat();
-              lon = marker.getPosition().lng();
-              $log.log(lat);
-              $log.log(lon);
-
-              $scope.marker.options = {
-                draggable: true,
-                labelContent: "lat: " + $scope.marker.coords.latitude + ' ' + 'lon: ' + $scope.marker.coords.longitude,
-                labelAnchor: "100 0",
-                labelClass: "marker-labels"
-              };
-          }
+          options: { draggable: false },
+          events: {}
         });
 
+        $scope.map.center = {
+          latitude: response.data.latitude,
+          longitude: response.data.longitude
+        }
+        $scope.map.zoom = 18
+
       )
-
-
-      # address = Address.get(address: $routeParams.address, isArray: false, (address)->
-
-      #   pos = {pos: [address.latitude, address.longitude]}
-
-      #   console.log(pos)
-      #   console.log($scope)
-
-      #   $scope.positions.push(pos)
-
-      #   console.log($scope.positions)
-
-      # )
 
     $scope.search = (address)->
       $location.path("/").search('address',address)
