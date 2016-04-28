@@ -2,13 +2,13 @@
   "name": "StreetHealth",
   "version": "1.0.0",
   "dependencies": {
-    "bower": "~1.2"
+    "bower": "~1.7.9"
   },
   "engine": {
     "node": "0.10.x",
     "npm": "1.3.x"
   },
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install --config.interactive=false && echo $?"
+    "postinstall": "./node_modules/bower/bin/bower install --config.directory=vendor/assets/bower_components && echo $?"
   }
 }
