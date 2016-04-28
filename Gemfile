@@ -6,8 +6,8 @@ gem 'rails', '4.2.5.1'
 gem 'sass'
 
 # Use Bootstrap for frontend
-gem 'bootstrap-sass', '~> 3.3.6'
-gem 'sass-rails', '>= 3.2'
+gem 'bootstrap-sass'
+gem 'sass-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 
