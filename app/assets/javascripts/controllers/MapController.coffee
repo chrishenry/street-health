@@ -14,6 +14,7 @@ controllers.controller("MapController",
       zoom: 13
     };
     $scope.markers = []
+    $scope.service_requests = []
 
     if $routeParams.address
       $scope.address = $routeParams.address
@@ -42,6 +43,7 @@ controllers.controller("MapController",
           longitude: response.data.longitude
         }
         $scope.map.zoom = 18
+        $scope.service_requests = response.data.service_requests
 
       )
 

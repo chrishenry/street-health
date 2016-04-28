@@ -12,6 +12,20 @@
           </span>
         </div>
       </form>
+
+      <table class="table table-hover table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tr ng-repeat="sr in service_requests">
+          <td>{{sr.complaint_type}}</td>
+          <td>{{sr.created_date}}</td>
+        </tr>
+      </table>
+
     </div>
 
     <div class="col-md-8">
