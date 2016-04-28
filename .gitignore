@@ -29,7 +29,7 @@ config/initializers/secret_token.rb
 
 # if using bower-rails ignore default bower_components path bower.json files
 vendor/assets/.bowerrc
-bower.json
+vendor/assets/bower.json
 bower_components
 
 # Ignore pow environment settings
