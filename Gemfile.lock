@@ -246,7 +246,7 @@ DEPENDENCIES
   angular-rails-templates
   angularjs-rails
   bcrypt (~> 3.1.7)
-  bootstrap-sass (~> 3.3.6)
+  bootstrap-sass
   bootstrap-will_paginate (= 0.0.10)
   bower-rails
   byebug
@@ -264,12 +264,12 @@ DEPENDENCIES
   phantomjs
   puma (= 3.2.0)
   rails (= 4.2.5.1)
-  rails_12factor (= 0.0.2)
+  rails_12factor
   rails_serve_static_assets
   rails_stdout_logging
   rspec-rails (~> 3.4.2)
   sass
-  sass-rails (>= 3.2)
+  sass-rails
   sdoc (~> 0.4.0)
   selenium-webdriver
   simplecov
