@@ -24,6 +24,17 @@ class Address < ActiveRecord::Base
 
   end
 
+  # Street number + route long name (all uppercase)
+  def Address.get_address_from_geo_query(match)
+
+    num = match.data['address_components'].find {|c| c['types'].include?('street_number') }
+    route = match.data['address_components'].find {|c| c['types'].include?('route') }
+
+    retval = num['long_name'] + ' ' + route['long_name']
+    retval.upcase
+
+  end
+
   def Address.find_or_create_by_address(address)
 
     address = address.upcase
@@ -51,6 +62,9 @@ class Address < ActiveRecord::Base
 
     ActiveRecord::Base.logger.info pp(best_match.data)
     validate_address_components(best_match)
+
+    address = get_address_from_geo_query(best_match)
+    ActiveRecord::Base.logger.info address
 
     self.find_or_create_by(address: address)
   end

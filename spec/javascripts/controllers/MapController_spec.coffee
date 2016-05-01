@@ -6,9 +6,18 @@ describe "MapController", ->
   flash        = null
   location     = null
 
-  fakeAddress   =
-    address: '324 Spring St'
-    data: 'gribble'
+  fakeAddress =
+    id: 1
+    address: '324 SPRING STREET'
+    latitude: 40.7258383
+    longitude: -74.0094194
+    service_requests: [
+      {
+        complaint_type: "Noise - Commercial",
+        created_date: "2012-02-18T00:10:16.000Z",
+        descriptor: "Loud Music/Party",
+      }
+    ]
 
   setupController =(addressExists=true,address=null)->
     inject(($location, $routeParams, $rootScope, $httpBackend, $controller, _flash_)->
@@ -22,7 +31,7 @@ describe "MapController", ->
       if address
         request = new RegExp("\/addresses*")
         results = if addressExists
-          [200,[fakeAddress]]
+          [200,fakeAddress]
         else
           [404]
 
@@ -43,12 +52,20 @@ describe "MapController", ->
       it 'has scope of null', ->
         setupController()
         expect(scope.address_results).toEqualData(undefined)
+        expect(scope.markers.length).toEqualData(0)
 
     describe 'address is found', ->
-      it 'loads the given address', ->
-        setupController(true, "324 Spring St")
+      it 'loads the address and updates the UI', ->
+        input = "324 Spring St"
+        setupController(true, input)
         httpBackend.flush()
-        expect(scope.address).toEqualData(fakeAddress.address)
+        expect(scope.address).toEqualData(input)
+
+        # Map changes
+        expect(scope.markers.length).toEqualData(1)
+        expect(scope.map.zoom).toEqualData(18)
+        expect(scope.service_requests.length).toEqualData(1)
+        expect(scope.complaint_types.length).toEqualData(1)
 
   # describe 'recipe is not found', ->
   #   beforeEach(setupController(false))
