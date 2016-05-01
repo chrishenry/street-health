@@ -24,10 +24,6 @@ controllers.controller("MapController",
       }).then((response)->
         console.log(response.data)
 
-        pos = {pos: [response.data.latitude, response.data.longitude]}
-        console.log(pos)
-        $scope.positions.push(pos)
-
         $scope.markers.push({
           id: 0,
           coords: {
