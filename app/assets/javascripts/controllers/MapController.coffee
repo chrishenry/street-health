@@ -48,12 +48,12 @@ controllers.controller("MapController",
     $scope.search = (address)->
       $location.path("/").search('address',address)
 
-    requestTypeCount = (data)->
+    requestTypeCount = (service_requests)->
 
       retval = {}
 
-      for i in [0...data.length]
-        ct = data[i].complaint_type
+      for i in [0...service_requests.length]
+        ct = service_requests[i].complaint_type
         if ct of retval
           retval[ct].count++
         else
