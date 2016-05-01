@@ -14,7 +14,12 @@
       </form>
 
       <div id="service-requests-info" ng-hide="service_requests.length == 0">
-        <p>There are {{service_requests.length}} Service Requests that we know of.</p>
+        <h3>{{service_requests.length}} Service Requests.</h3>
+
+        <ul ng-repeat="type in (filteredItems = (complaint_types | orderBy: 'count':true))">
+          <li>{{type.type}}: {{type.count}}</li>
+        </ul>
+
       </div>
 
       <div id="service-requests"  class="table-responsive">
@@ -26,9 +31,9 @@
               <th>Date</th>
             </tr>
           </thead>
-          <tr ng-repeat="sr in service_requests">
+          <tr ng-repeat="sr in (filteredItems = (service_requests | orderBy: 'created_at':true))">
             <td>{{sr.complaint_type}}</td>
-            <td>{{sr.created_date | date:"MM/dd/yyyy 'at' h:mma"}}</td>
+            <td>{{sr.created_date | date:"MM/dd/yyyy h:mma" : timezone: 'UTC'}}</td>
           </tr>
         </table>
       </div>

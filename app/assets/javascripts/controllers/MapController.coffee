@@ -41,9 +41,32 @@ controllers.controller("MapController",
         $scope.map.zoom = 18
         $scope.service_requests = response.data.service_requests
 
+        $scope.complaint_types = requestTypeCount(response.data.service_requests)
+
       )
 
     $scope.search = (address)->
       $location.path("/").search('address',address)
+
+    requestTypeCount = (data)->
+
+      retval = {}
+
+      for i in [0...data.length]
+        ct = data[i].complaint_type
+        if ct of retval
+          retval[ct].count++
+        else
+          retval[ct] = {type: ct, count: 1}
+
+      log = [];
+      angular.forEach(retval, (value, key)->
+        this.push(value);
+      , log);
+
+      console.log(retval)
+      console.log(log)
+
+      return log
 
 ])
