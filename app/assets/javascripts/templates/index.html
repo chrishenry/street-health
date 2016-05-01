@@ -2,7 +2,7 @@
 
   <div class="row-fluid">
 
-    <div class="col-md-4">
+    <div class="col-md-6">
       <form>
         <div class="input-group">
           <label for="address" class="sr-only">Address</label>
@@ -13,22 +13,29 @@
         </div>
       </form>
 
-      <table class="table table-hover table-striped">
-        <thead>
-          <tr>
-            <th>Type</th>
-            <th>Date</th>
+      <div id="service-requests-info" ng-hide="service_requests.length == 0">
+        <p>There are {{service_requests.length}} Service Requests that we know of.</p>
+      </div>
+
+      <div id="service-requests"  class="table-responsive">
+
+        <table class="table table-hover table-striped">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tr ng-repeat="sr in service_requests">
+            <td>{{sr.complaint_type}}</td>
+            <td>{{sr.created_date}}</td>
           </tr>
-        </thead>
-        <tr ng-repeat="sr in service_requests">
-          <td>{{sr.complaint_type}}</td>
-          <td>{{sr.created_date}}</td>
-        </tr>
-      </table>
+        </table>
+      </div>
 
     </div>
 
-    <div class="col-md-8">
+    <div class="col-md-6">
       <ui-gmap-google-map center='map.center' zoom='map.zoom'>
         <ui-gmap-marker ng-repeat="marker in markers" coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id"></ui-gmap-marker>
       </ui-gmap-google-map>

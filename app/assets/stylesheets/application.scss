@@ -158,7 +158,8 @@ input {
 
 .angular-google-map-container { height: 400px; }
 
-#stuff {
-  border: 1px solid #bbb;
-  padding: 3px;
+#service-requests {
+  height: 366px;
+  overflow-y: scroll;
 }
+
