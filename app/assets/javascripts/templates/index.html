@@ -13,29 +13,24 @@
         </div>
       </form>
 
-      <div id="service-requests-info" ng-hide="service_requests.length == 0">
-        <h3>{{service_requests.length}} Service Requests.</h3>
-
-        <ul ng-repeat="type in (filteredItems = (complaint_types | orderBy: 'count':true))">
-          <li>{{type.type}}: {{type.count}}</li>
-        </ul>
-
-      </div>
-
       <div id="service-requests"  class="table-responsive">
 
-        <table class="table table-hover table-striped">
-          <thead>
-            <tr>
-              <th>Type</th>
-              <th>Date</th>
-            </tr>
-          </thead>
-          <tr ng-repeat="sr in (filteredItems = (service_requests | orderBy: 'created_at':true))">
-            <td>{{sr.complaint_type}}</td>
-            <td>{{sr.created_date | date:"MM/dd/yyyy h:mma" : timezone: 'UTC'}}</td>
-          </tr>
-        </table>
+        <uib-accordion close-others="oneAtATime">
+          <uib-accordion-group ng-repeat="type in (filteredItems = (complaint_types | orderBy: 'count':true))" is-open="status.open">
+            <uib-accordion-heading>
+              {{type.type}} ({{type.count}}) <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+            </uib-accordion-heading>
+
+            <table class="table table-hover table-striped">
+              <tr ng-repeat="sr in (filteredItems = (service_requests | filter:{complaint_type:type.type} | orderBy: 'created_at':true))">
+                <td>{{sr.complaint_type}}</td>
+                <td>{{sr.created_date | date:"MM/dd/yyyy h:mma" : timezone: 'UTC'}}</td>
+              </tr>
+            </table>
+
+          </uib-accordion-group>
+        </uib-accordion>
+
       </div>
 
     </div>
