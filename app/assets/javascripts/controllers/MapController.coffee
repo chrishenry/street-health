@@ -1,4 +1,4 @@
-controllers = angular.module('controllers', ['uiGmapgoogle-maps'])
+controllers = angular.module('controllers', ['uiGmapgoogle-maps', 'ui.bootstrap'])
 controllers.controller("MapController",
   ['$scope', '$routeParams',  '$location', '$http', '$resource', '$interval', 'flash',
   ($scope, $routeParams, $location, $http, $resource, $interval, flash)->
