@@ -1,7 +1,7 @@
 controllers = angular.module('controllers', ['uiGmapgoogle-maps', 'ui.bootstrap'])
 controllers.controller("MapController",
-  ['$scope', '$routeParams',  '$location', '$http', '$resource', '$interval', 'flash',
-  ($scope, $routeParams, $location, $http, $resource, $interval, flash)->
+  ['$scope', '$routeParams',  '$location', '$http', '$resource', '$interval',
+  ($scope, $routeParams, $location, $http, $resource, $interval)->
     Address = $resource('/addresses/show.json', { addressString: "@address" })
 
     $scope.positions = [];

@@ -16,7 +16,7 @@
       <div id="service-requests"  class="table-responsive">
 
         <uib-accordion close-others="oneAtATime">
-          <uib-accordion-group ng-repeat="type in (filteredItems = (complaint_types | orderBy: 'count':true))" is-open="status.open">
+          <div uib-accordion-group ng-repeat="type in (filteredItems = (complaint_types | orderBy: 'count':true))" is-open="status.open">
             <uib-accordion-heading>
               {{type.type}} ({{type.count}}) <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
             </uib-accordion-heading>
@@ -28,7 +28,7 @@
               </tr>
             </table>
 
-          </uib-accordion-group>
+          </div>
         </uib-accordion>
 
       </div>
