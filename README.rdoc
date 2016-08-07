@@ -2,31 +2,13 @@
 
 Application to display 311 and other complaint data. Check up on an address's history of complaints.
 
-== README
+== Test Commands
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```bash
 
-Things you may want to cover:
+# Front end / angular tests
+bx rake teaspoon
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+# Spec tests
+bx rake spec
+```
