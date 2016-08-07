@@ -1,19 +1,17 @@
 {
-  "name": "dsl-generated dependencies",
+  "name": "dsl-generated-dependencies",
   "dependencies": {
     "angular": "latest",
     "angular-route": "latest",
     "angular-resource": "latest",
     "angular-mocks": "latest",
-    "angular-flash": "latest",
     "angular-animate": "latest",
-    "angular-touch": "latest",
-    "angular-ui-bootstrap-bower": "latest",
+    "angular-bootstrap": "latest",
     "angular-google-maps": "latest",
     "bootstrap-sass-official": "latest",
     "angularjs-geolocation": "latest"
   },
   "resolutions": {
-    "angular": "1.5.5"
+    "angular": "1.5.8"
   }
 }

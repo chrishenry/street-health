@@ -3,7 +3,6 @@ describe "MapController", ->
   ctrl         = null
   routeParams  = null
   httpBackend  = null
-  flash        = null
   location     = null
 
   fakeAddress =
@@ -20,13 +19,12 @@ describe "MapController", ->
     ]
 
   setupController =(addressExists=true,address=null)->
-    inject(($location, $routeParams, $rootScope, $httpBackend, $controller, _flash_)->
+    inject(($location, $routeParams, $rootScope, $httpBackend, $controller)->
       scope       = $rootScope.$new()
       location    = $location
       httpBackend = $httpBackend
       routeParams = $routeParams
       routeParams.address = address if address
-      flash = _flash_
 
       if address
         request = new RegExp("\/addresses*")
@@ -66,10 +64,3 @@ describe "MapController", ->
         expect(scope.map.zoom).toEqualData(18)
         expect(scope.service_requests.length).toEqualData(1)
         expect(scope.complaint_types.length).toEqualData(1)
-
-  # describe 'recipe is not found', ->
-  #   beforeEach(setupController(false))
-  #   it 'loads the given recipe', ->
-  #     httpBackend.flush()
-  #     expect(scope.recipe).toBe(null)
-  #     expect(flash.error).toBe("There is no recipe with ID #{recipeId}")

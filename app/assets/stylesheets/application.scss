@@ -139,12 +139,14 @@ footer {
   @include box_sizing;
 }
 
-/* sidebar */
+/* Accordion */
 
-aside {
+.panel-heading {
+  padding: 10px 15px 10px 0px;
+}
 
-
-
+.panel-body {
+  padding: 0;
 }
 
 /* forms */
@@ -172,6 +174,7 @@ input {
 .angular-google-map-container { height: 400px; }
 
 #service-requests {
+  margin-top:15px;
   height: 366px;
   overflow-y: scroll;
 }

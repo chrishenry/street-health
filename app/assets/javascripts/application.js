@@ -13,12 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require angular/angular
-//= require angular-flash/dist/angular-flash
 //= require angular-route/angular-route
 //= require angular-resource/angular-resource
 //= require angular-rails-templates
-//= require angular-touch
-//= require angular-ui-bootstrap-bower
+//= require angular-bootstrap
 //= require lodash/dist/lodash
 //= require angular-google-maps/dist/angular-google-maps
 //= require angular-simple-logger/dist/angular-simple-logger
