@@ -2,7 +2,7 @@
 (function() {
   var receta;
 
-  receta = angular.module('receta', ['templates', 'ngRoute', 'ngResource', 'controllers', 'uiGmapgoogle-maps']);
+  receta = angular.module('receta', ['templates', 'ngAnimate', 'ngRoute', 'ngResource', 'controllers', 'uiGmapgoogle-maps']);
 
   receta.config([
     '$routeProvider', function($routeProvider) {
