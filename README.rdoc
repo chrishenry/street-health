@@ -12,3 +12,13 @@ bx rake teaspoon
 # Spec tests
 bx rake spec
 ```
+
+== Running a migration
+
+```bash
+heroku maintenance:on
+
+heroku run rake db:migrate
+
+heroku maintenance:on
+```
