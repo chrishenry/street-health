@@ -18,7 +18,7 @@
         <uib-accordion close-others="oneAtATime">
           <div uib-accordion-group ng-repeat="type in (filteredItems = (complaint_types | orderBy: 'count':true))" is-open="status.open">
             <uib-accordion-heading>
-              {{type.type}} ({{type.count}}) <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+              {{type.type | titlecase}} ({{type.count}}) <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
             </uib-accordion-heading>
 
             <table class="table table-hover table-striped">

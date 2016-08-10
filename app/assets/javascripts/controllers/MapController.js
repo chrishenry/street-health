@@ -5,11 +5,14 @@
   controllers = angular.module('controllers', ['uiGmapgoogle-maps', 'ui.bootstrap']);
 
   controllers.controller("MapController", [
-    '$scope', '$routeParams', '$location', '$http', '$resource', '$interval', function($scope, $routeParams, $location, $http, $resource, $interval) {
+    '$scope', '$routeParams', '$location', '$http', '$resource', '$interval',
+    function($scope, $routeParams, $location, $http, $resource, $interval) {
+
       var Address, requestTypeCount;
       Address = $resource('/addresses/show.json', {
         addressString: "@address"
       });
+
       $scope.positions = [];
       $scope.map = {
         center: {
@@ -20,13 +23,13 @@
       };
       $scope.markers = [];
       $scope.service_requests = [];
+
       if ($routeParams.address) {
         $scope.address = $routeParams.address;
         $http({
           url: '/addresses/show.json?address=' + $routeParams.address,
           method: 'GET'
         }).then(function(response) {
-          console.log(response.data);
           $scope.markers.push({
             id: 0,
             coords: {
@@ -47,9 +50,11 @@
           return $scope.complaint_types = requestTypeCount(response.data.service_requests);
         });
       }
+
       $scope.search = function(address) {
         return $location.path("/").search('address', address);
       };
+
       return requestTypeCount = function(service_requests) {
         var ct, i, j, log, ref, retval;
         retval = {};
@@ -68,10 +73,9 @@
         angular.forEach(retval, function(value, key) {
           return this.push(value);
         }, log);
-        console.log(retval);
-        console.log(log);
         return log;
       };
+
     }
   ]);
 
