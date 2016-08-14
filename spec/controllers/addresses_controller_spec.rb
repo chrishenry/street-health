@@ -8,14 +8,14 @@ describe AddressesController do
     end
 
     describe "when there is an invalid address" do
-      it 'should throw ActiveRecord::RecordNotFound' do
+      it 'should throw an ArgumentError' do
 
         expect {
           VCR.use_cassette("geolocate", :record => :new_episodes, :allow_playback_repeats => true) do
             Address.create!(address: '324 SPRING STREET')
             xhr :get, :show, format: :json, address: 'not a real address'
           end
-        }.to raise_exception(ActiveRecord::RecordNotFound)
+        }.to raise_exception(ArgumentError)
 
       end
     end
