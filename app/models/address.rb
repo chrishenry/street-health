@@ -1,3 +1,5 @@
+require 'pp'
+
 class Address < ActiveRecord::Base
   has_many :service_requests
 
@@ -37,43 +39,39 @@ class Address < ActiveRecord::Base
 
     address = address.upcase
 
-    addr = self.find_or_initialize_by(address: address)
+    # Pretty inefficient, as this will query, and then the geocoded_by will make a call
+    geo_query = GeocoderService.new.query(address + ", NY")
 
-    if addr.new_record?
-      # Pretty inefficient, as this will query, and then the geocoded_by will make a call
-      geo_query = GeocoderService.new.query(address + ", NY")
+    ActiveRecord::Base.logger.info pp(geo_query)
 
-      require 'pp'
-      ActiveRecord::Base.logger.info pp(geo_query)
-
-      # geo_query[0].data needs to have a street_number or route type address component
-      if geo_query.length == 0
-        return false
-      end
-
-      # TODO: consider iterating through results for a best match
-      # TODO: break this logic out into it's own, more testable function
-      best_match = geo_query[0]
-      # ActiveRecord::Base.logger.info pp(best_match)
-
-      if not best_match.data.has_key?('address_components')
-        raise ActiveRecord::RecordNotFound
-      end
-
-      ActiveRecord::Base.logger.info pp(best_match.data)
-      validate_address_components(best_match)
-
-      address = get_address_from_geo_query(best_match)
-      ActiveRecord::Base.logger.info address
-
-      addr.update_attributes({
-        address: address,
-        latitude: best_match.coordinates()[0],
-        longitude: best_match.coordinates()[1]
-      })
-
-      addr.save
+    # geo_query[0].data needs to have a street_number or route type address component
+    # TODO: probably raise an error to be handled elsewhere
+    if geo_query.length == 0
+      return false
     end
+
+    # TODO: consider iterating through results for a best match
+    # TODO: break this logic out into it's own, more testable function
+    best_match = geo_query[0]
+
+    if not best_match.data.has_key?('address_components')
+      raise ActiveRecord::RecordNotFound
+    end
+
+    ActiveRecord::Base.logger.info pp(best_match.data)
+    validate_address_components(best_match)
+
+    address = get_address_from_geo_query(best_match)
+    ActiveRecord::Base.logger.info address
+
+    addr = self.find_or_initialize_by(address: address)
+    addr.update_attributes({
+      address: address,
+      latitude: best_match.coordinates()[0],
+      longitude: best_match.coordinates()[1]
+    })
+
+    addr.save
 
     addr
 
