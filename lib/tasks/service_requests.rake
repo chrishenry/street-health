@@ -17,7 +17,13 @@ namespace :service_requests do
 
       puts sr.incident_address
 
-      addr = Address.find_or_create_by_address(sr.incident_address)
+      begin
+        addr = Address.find_or_create_by_address(sr.incident_address)
+      rescue ArgumentError
+          puts 'Address wasn\'t specific enough'
+          next
+      end
+
       sr = ServiceRequest.upsert(addr.id, sr)
 
     end

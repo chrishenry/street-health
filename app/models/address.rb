@@ -19,7 +19,7 @@ class Address < ActiveRecord::Base
     end
 
     if req_count < required_address_components.length
-      raise ActiveRecord::RecordNotFound
+      raise ArgumentError.new("Address doesn't have enough granularity")
     end
 
   end
@@ -74,7 +74,7 @@ class Address < ActiveRecord::Base
     ActiveRecord::Base.logger.info self.address
 
     socrata = SocrataService.new(Rails.application.config.socrata)
-    service_requests = socrata.query(self.address.upcase)
+    service_requests = socrata.query_by_address(self.address.upcase)
 
     service_requests.each do |sr|
       ServiceRequest.upsert(self.id, sr)
@@ -84,11 +84,6 @@ class Address < ActiveRecord::Base
 
   def geocode_address()
     address + ", NY"
-  end
-
-  def self.search_socrata(address)
-    socrata = SocrataService.new(Rails.application.config.socrata)
-    socrata.query(address.upcase)
   end
 
   private
