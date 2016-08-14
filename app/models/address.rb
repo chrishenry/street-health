@@ -2,8 +2,6 @@ class Address < ActiveRecord::Base
   has_many :service_requests
 
   before_save :upcase_address
-  geocoded_by :geocode_address
-  after_validation :geocode
 
   def Address.validate_address_components(best_match)
 
@@ -42,7 +40,6 @@ class Address < ActiveRecord::Base
     addr = self.find_or_initialize_by(address: address)
 
     if addr.new_record?
-
       # Pretty inefficient, as this will query, and then the geocoded_by will make a call
       geo_query = GeocoderService.new.query(address + ", NY")
 
@@ -69,21 +66,28 @@ class Address < ActiveRecord::Base
       address = get_address_from_geo_query(best_match)
       ActiveRecord::Base.logger.info address
 
+      addr.update_attributes({
+        address: address,
+        latitude: best_match.coordinates()[0],
+        longitude: best_match.coordinates()[1]
+      })
+
       addr.save
-
-
     end
 
     addr
 
   end
 
+  # TODO: implement recency logic. If address has updated date of older than X, update service requests
   def update_service_requests
     ActiveRecord::Base.logger.info "update_service_requests"
     ActiveRecord::Base.logger.info self.address
 
     socrata = SocrataService.new(Rails.application.config.socrata)
     service_requests = socrata.query_by_address(self.address.upcase)
+
+    ActiveRecord::Base.logger.info "sr.len: #{service_requests.length}"
 
     service_requests.each do |sr|
       ServiceRequest.upsert(self.id, sr)
