@@ -77,22 +77,7 @@ class Address < ActiveRecord::Base
     service_requests = socrata.query(self.address.upcase)
 
     service_requests.each do |sr|
-      new_sr = ServiceRequest.find_or_initialize_by(unique_key: sr.unique_key)
-
-      ActiveRecord::Base.logger.info sr
-
-      if new_sr.new_record?
-        new_sr.update_attributes({
-          address_id: self.id,
-          complaint_type: sr.complaint_type,
-          descriptor: sr.descriptor,
-          created_date: sr.created_date,
-          status: sr.status,
-          resolution_description: sr.resolution_description
-        })
-      end
-
-      ActiveRecord::Base.logger.info new_sr
+      ServiceRequest.upsert(self.id, sr)
     end
 
   end
