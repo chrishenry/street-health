@@ -1,9 +1,9 @@
+require 'pp'
+
 class Address < ActiveRecord::Base
   has_many :service_requests
 
   before_save :upcase_address
-  geocoded_by :geocode_address
-  after_validation :geocode
 
   def Address.validate_address_components(best_match)
 
@@ -19,7 +19,7 @@ class Address < ActiveRecord::Base
     end
 
     if req_count < required_address_components.length
-      raise ActiveRecord::RecordNotFound
+      raise ArgumentError.new("Address doesn't have enough granularity")
     end
 
   end
@@ -40,13 +40,12 @@ class Address < ActiveRecord::Base
     address = address.upcase
 
     # Pretty inefficient, as this will query, and then the geocoded_by will make a call
-    # TODO: actually use the info from the geo query response
     geo_query = GeocoderService.new.query(address + ", NY")
 
-    require 'pp'
     ActiveRecord::Base.logger.info pp(geo_query)
 
     # geo_query[0].data needs to have a street_number or route type address component
+    # TODO: probably raise an error to be handled elsewhere
     if geo_query.length == 0
       return false
     end
@@ -54,7 +53,6 @@ class Address < ActiveRecord::Base
     # TODO: consider iterating through results for a best match
     # TODO: break this logic out into it's own, more testable function
     best_match = geo_query[0]
-    # ActiveRecord::Base.logger.info pp(best_match)
 
     if not best_match.data.has_key?('address_components')
       raise ActiveRecord::RecordNotFound
@@ -66,44 +64,37 @@ class Address < ActiveRecord::Base
     address = get_address_from_geo_query(best_match)
     ActiveRecord::Base.logger.info address
 
-    self.find_or_create_by(address: address)
+    addr = self.find_or_initialize_by(address: address)
+    addr.update_attributes({
+      address: address,
+      latitude: best_match.coordinates()[0],
+      longitude: best_match.coordinates()[1]
+    })
+
+    addr.save
+
+    addr
+
   end
 
+  # TODO: implement recency logic. If address has updated date of older than X, update service requests
   def update_service_requests
     ActiveRecord::Base.logger.info "update_service_requests"
     ActiveRecord::Base.logger.info self.address
 
     socrata = SocrataService.new(Rails.application.config.socrata)
-    service_requests = socrata.query(self.address.upcase)
+    service_requests = socrata.query_by_address(self.address.upcase)
+
+    ActiveRecord::Base.logger.info "sr.len: #{service_requests.length}"
 
     service_requests.each do |sr|
-      new_sr = ServiceRequest.find_or_initialize_by(unique_key: sr.unique_key)
-
-      ActiveRecord::Base.logger.info sr
-
-      if new_sr.new_record?
-        new_sr.update_attributes({
-          address_id: self.id,
-          complaint_type: sr.complaint_type,
-          descriptor: sr.descriptor,
-          created_date: sr.created_date,
-          status: sr.status,
-          resolution_description: sr.resolution_description
-        })
-      end
-
-      ActiveRecord::Base.logger.info new_sr
+      ServiceRequest.upsert(self.id, sr)
     end
 
   end
 
   def geocode_address()
     address + ", NY"
-  end
-
-  def self.search_socrata(address)
-    socrata = SocrataService.new(Rails.application.config.socrata)
-    socrata.query(address.upcase)
   end
 
   private

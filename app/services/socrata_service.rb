@@ -9,7 +9,7 @@ class SocrataService
     @client = SODA::Client.new({:domain => config[:domain], :app_token => config[:app_token]})
   end
 
-  def query(address)
+  def query_by_address(address)
     begin
       response = @client.get(@config[:dataset_id], {"$limit" => 50, :incident_address => address})
     rescue Exception => e
@@ -17,38 +17,12 @@ class SocrataService
     end
   end
 
-  def create_customer
+  def query_from_created(date)
     begin
-      # This will return a Stripe::Customer object
-      external_customer_service.create(customer_attributes)
-    rescue
-      false
+      response = @client.get(@config[:dataset_id], {'$where' => 'created_date > "2016-08-13 12:00:00"'})
+    rescue Exception => e
+      puts e.message + " " + e.backtrace.inspect
     end
   end
 
-  private
-
-  attr_reader :card, :amount, :email
-
-  def external_charge_service
-    Stripe::Charge
-  end
-
-  def external_customer_service
-    Stripe::Customer
-  end
-
-  def charge_attributes
-    {
-      amount: amount,
-      card: card
-    }
-  end
-
-  def customer_attributes
-    {
-      email: email,
-      card: card
-    }
-  end
 end

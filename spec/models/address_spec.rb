@@ -30,7 +30,7 @@ RSpec.describe Address, type: :model do
 
     expect{
       Address.validate_address_components(best_match)
-    }.to raise_exception(ActiveRecord::RecordNotFound)
+    }.to raise_exception(ArgumentError)
 
   end
 

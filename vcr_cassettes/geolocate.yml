@@ -3408,4 +3408,372 @@ http_interactions:
         }
     http_version: 
   recorded_at: Sun, 01 May 2016 22:17:45 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=324%20SPRING%20STREET,%20NY&key=AIzaSyCCh_8bPalwdULs2n0K1r45OoBwzVMGtj0&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 14 Aug 2016 03:58:26 GMT
+      Expires:
+      - Mon, 15 Aug 2016 03:58:26 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '620'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34,33,32,31,30"
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Lower Manhattan",
+                       "short_name" : "Lower Manhattan",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Manhattan",
+                       "short_name" : "Manhattan",
+                       "types" : [ "political", "sublocality", "sublocality_level_1" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "New York",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New York County",
+                       "short_name" : "New York County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "NY",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "10013",
+                       "short_name" : "10013",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "1394",
+                       "short_name" : "1394",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, New York, NY 10013, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.725921,
+                          "lng" : -74.009372
+                       },
+                       "southwest" : {
+                          "lat" : 40.7257557,
+                          "lng" : -74.00946689999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 40.7258383,
+                       "lng" : -74.0094194
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.72718733029149,
+                          "lng" : -74.00807046970849
+                       },
+                       "southwest" : {
+                          "lat" : 40.7244893697085,
+                          "lng" : -74.01076843029151
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJmbbkCfNZwokR63yktjHmILM",
+                 "types" : [ "premise" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Sun, 14 Aug 2016 03:58:26 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=NOT%20A%20REAL%20ADDRESS,%20NY,%20New%20York&key=AIzaSyCCh_8bPalwdULs2n0K1r45OoBwzVMGtj0&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 14 Aug 2016 03:58:26 GMT
+      Expires:
+      - Mon, 15 Aug 2016 03:58:26 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '442'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34,33,32,31,30"
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "New York",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "NY",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "New York, NY, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.9152555,
+                          "lng" : -73.70027209999999
+                       },
+                       "southwest" : {
+                          "lat" : 40.496044,
+                          "lng" : -74.255735
+                       }
+                    },
+                    "location" : {
+                       "lat" : 40.7127837,
+                       "lng" : -74.0059413
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.9152555,
+                          "lng" : -73.70027209999999
+                       },
+                       "southwest" : {
+                          "lat" : 40.496044,
+                          "lng" : -74.255735
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJOwg_06VPwokRYv534QaPC8g",
+                 "types" : [ "locality", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Sun, 14 Aug 2016 03:58:26 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=324%20SPRING%20STREET,%20NY,%20New%20York&key=AIzaSyCCh_8bPalwdULs2n0K1r45OoBwzVMGtj0&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 14 Aug 2016 04:54:32 GMT
+      Expires:
+      - Mon, 15 Aug 2016 04:54:32 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '620'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34,33,32,31,30"
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "324",
+                       "short_name" : "324",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Spring Street",
+                       "short_name" : "Spring St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Lower Manhattan",
+                       "short_name" : "Lower Manhattan",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Manhattan",
+                       "short_name" : "Manhattan",
+                       "types" : [ "political", "sublocality", "sublocality_level_1" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "New York",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New York County",
+                       "short_name" : "New York County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "NY",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "10013",
+                       "short_name" : "10013",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "1394",
+                       "short_name" : "1394",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "324 Spring St, New York, NY 10013, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.725921,
+                          "lng" : -74.009372
+                       },
+                       "southwest" : {
+                          "lat" : 40.7257557,
+                          "lng" : -74.00946689999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 40.7258383,
+                       "lng" : -74.0094194
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.72718733029149,
+                          "lng" : -74.00807046970849
+                       },
+                       "southwest" : {
+                          "lat" : 40.7244893697085,
+                          "lng" : -74.01076843029151
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJmbbkCfNZwokR63yktjHmILM",
+                 "types" : [ "premise" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Sun, 14 Aug 2016 04:54:32 GMT
 recorded_with: VCR 3.0.1
