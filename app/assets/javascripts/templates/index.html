@@ -6,14 +6,14 @@
       <form>
         <div class="input-group">
           <label for="address" class="sr-only">Address</label>
-          <input ng-model="address" name="address" type="text" autofocus class="form-control" placeholder="Enter an address. e.g. 671 Broadway">
+          <input ng-model="address" name="address" type="text" autofocus class="form-control input-lg" placeholder="Enter an address. e.g. 671 Broadway">
           <span class="input-group-btn">
-            <button ng-click="search(address)" class="btn btn-primary">Search</button>
+            <button ng-click="search(address)" class="btn btn-primary input-lg">Search</button>
           </span>
         </div>
       </form>
 
-      <div id="service-requests"  class="table-responsive">
+      <div class="service-requests table-responsive">
 
         <uib-accordion close-others="oneAtATime">
           <div uib-accordion-group ng-repeat="type in (filteredItems = (complaint_types | orderBy: 'count':true))" is-open="status.open">

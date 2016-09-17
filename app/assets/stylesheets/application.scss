@@ -183,9 +183,9 @@ input {
 
 .angular-google-map-container { height: 400px; }
 
-#service-requests {
+.service-requests {
   margin-top:15px;
-  height: 366px;
+  max-height: 366px;
   overflow-y: scroll;
 }
 
