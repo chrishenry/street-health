@@ -86,9 +86,12 @@ class Address < ActiveRecord::Base
     service_requests = socrata.query_by_address(self.address.upcase)
 
     ActiveRecord::Base.logger.info "sr.len: #{service_requests.length}"
+    ActiveRecord::Base.logger.info service_requests
 
-    service_requests.each do |sr|
-      ServiceRequest.upsert(self.id, sr)
+    if service_requests.kind_of?(Array)
+      service_requests.each do |sr|
+        ServiceRequest.upsert(self.id, sr)
+      end
     end
 
   end
