@@ -9,7 +9,8 @@
     "angular-bootstrap": "latest",
     "angular-google-maps": "latest",
     "bootstrap-sass-official": "latest",
-    "angularjs-geolocation": "latest"
+    "angularjs-geolocation": "latest",
+    "angular-flash-alert": "^2.3.0"
   },
   "resolutions": {
     "angular": "1.5.8"

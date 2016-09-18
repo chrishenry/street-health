@@ -2,11 +2,11 @@
 (function() {
   var controllers;
 
-  controllers = angular.module('controllers', ['uiGmapgoogle-maps', 'ui.bootstrap']);
+  controllers = angular.module('controllers', ['uiGmapgoogle-maps', 'ui.bootstrap', 'ngFlash']);
 
   controllers.controller("MapController", [
-    '$scope', '$routeParams', '$location', '$http', '$resource', '$interval',
-    function($scope, $routeParams, $location, $http, $resource, $interval) {
+    '$scope', '$routeParams', '$location', '$http', '$resource', '$interval', 'Flash',
+    function($scope, $routeParams, $location, $http, $resource, $interval, Flash) {
 
       var Address, requestTypeCount;
       Address = $resource('/addresses/show.json', {
@@ -46,8 +46,17 @@
             longitude: response.data.longitude
           };
           $scope.map.zoom = 18;
-          $scope.service_requests = response.data.service_requests;
-          return $scope.complaint_types = requestTypeCount(response.data.service_requests);
+          if(response.data.service_requests.length > 0) {
+            $scope.service_requests = response.data.service_requests;
+            $scope.complaint_types = requestTypeCount(response.data.service_requests);
+          } else {
+            console.log("Show no SR msg")
+          }
+          Flash.clear();
+        }, function(response){
+
+          $scope.flash = Flash.create('success', response.data.errors, 0, {class: 'alert alert-danger'}, true);
+
         });
       }
 

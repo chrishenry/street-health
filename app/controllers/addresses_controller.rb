@@ -10,8 +10,12 @@ class AddressesController < ApplicationController
   def show
     ActiveRecord::Base.logger.info AddressParams.build(params)
 
-    @address = Address.find_or_create_by_address(AddressParams.build(params))
-    @address.update_service_requests()
+    begin
+      @address = Address.find_or_create_by_address(AddressParams.build(params))
+      @address.update_service_requests()
+    rescue => error
+      render :json => { :errors => error.message }, :status => 422
+    end
   end
 
 end

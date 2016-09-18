@@ -19,7 +19,7 @@ class Address < ActiveRecord::Base
     end
 
     if req_count < required_address_components.length
-      raise ArgumentError.new("Address doesn't have enough granularity")
+      raise ArgumentError.new("Hmmm, can't find that address. Try something like '324 Spring Street'")
     end
 
   end

@@ -2,7 +2,12 @@
 
   <div class="row-fluid">
 
+    <div class="col-md-12">
+      <flash-message></flash-message>
+    </div>
+
     <div class="col-md-6">
+
       <form>
         <div class="input-group">
           <label for="address" class="sr-only">Address</label>
@@ -11,7 +16,7 @@
           <span class="input-group-btn btn-geolocate">
             <button ng-click="geolocate()" class="btn btn-info input-lg">Find my location</button>
           </span>
-           -->
+-->
           <span class="input-group-btn btn-search">
             <button ng-click="search(address)" class="btn btn-primary input-lg">Search</button>
           </span>
@@ -36,6 +41,10 @@
           </div>
         </uib-accordion>
 
+        <div ng-show="service_requests.length == 0">
+          <div class="service-request-empty">No service requests found at this address.</div>
+        </div>
+
       </div>
 
     </div>
@@ -49,13 +58,3 @@
   </div>
 
 </div>
-
-
-<!-- <ul id="stuff">
-  <li ng-repeat="pos in positions">
-    <span>{{pos.name}}</span>
-    <p>{{pos.pos[0]}},{{pos.pos[1]}}</p>
-  </li>
-</ul> -->
-
-
