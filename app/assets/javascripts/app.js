@@ -2,7 +2,7 @@
 (function() {
   var receta;
 
-  receta = angular.module('receta', ['templates', 'ngAnimate', 'ngRoute', 'ngResource', 'controllers', 'uiGmapgoogle-maps', 'ngFlash', 'bsLoadingOverlay', 'bsLoadingOverlayHttpInterceptor'])
+  receta = angular.module('receta', ['templates', 'ngAnimate', 'ngRoute', 'ngResource', 'controllers', 'uiGmapgoogle-maps', 'bsLoadingOverlay', 'bsLoadingOverlayHttpInterceptor', 'angular-flash.service', 'angular-flash.flash-alert-directive'])
   .factory('allHttpInterceptor', function(bsLoadingOverlayHttpInterceptorFactoryFactory) {
     return bsLoadingOverlayHttpInterceptorFactoryFactory();
   })

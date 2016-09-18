@@ -3,7 +3,10 @@
   <div class="row-fluid">
 
     <div class="col-md-12">
-      <flash-message></flash-message>
+      <div flash-alert="error" active-class="in" class="alert-flash alert-danger error fade" ng-show="flash.message">
+          <strong class="alert-heading">Error!</strong>
+          <span class="alert-message">{{flash.message}}</span>
+      </div>
     </div>
 
     <div class="col-md-6">

@@ -13,7 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require angular/angular
-//= require angular-flash-alert/src/angular-flash
+//= require angular-flash/src/directives/flash-alert-directive
+//= require angular-flash/src/services/flash-service
 //= require angular-route/angular-route
 //= require angular-resource/angular-resource
 //= require angular-animate/angular-animate

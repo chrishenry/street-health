@@ -10,9 +10,9 @@
     "angular-google-maps": "latest",
     "bootstrap-sass-official": "latest",
     "angularjs-geolocation": "latest",
-    "angular-flash-alert": "^2.3.0",
     "angular-loading-overlay": "^1.1.1",
-    "angular-loading-overlay-http-interceptor": "^1.1.0"
+    "angular-loading-overlay-http-interceptor": "^1.1.0",
+    "angular-flash": "^0.1.14"
   },
   "resolutions": {
     "angular": "1.5.8"
