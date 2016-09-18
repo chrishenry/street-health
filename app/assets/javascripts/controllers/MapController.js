@@ -2,11 +2,11 @@
 (function() {
   var controllers;
 
-  controllers = angular.module('controllers', ['uiGmapgoogle-maps', 'ui.bootstrap', 'ngFlash', 'bsLoadingOverlay']);
+  controllers = angular.module('controllers', ['uiGmapgoogle-maps', 'ui.bootstrap','bsLoadingOverlay', 'angular-flash.service', 'angular-flash.flash-alert-directive']);
 
   controllers.controller("MapController", [
-    '$scope', '$routeParams', '$location', '$http', '$resource', '$interval', 'Flash', 'bsLoadingOverlayService',
-    function($scope, $routeParams, $location, $http, $resource, $interval, Flash, bsLoadingOverlayService) {
+    '$scope', '$routeParams', '$location', '$http', '$resource', '$interval', 'flash', 'bsLoadingOverlayService',
+    function($scope, $routeParams, $location, $http, $resource, $interval, flash, bsLoadingOverlayService) {
 
       var requestTypeCount;
 
@@ -23,7 +23,9 @@
 
       var addressHandler = function(response) {
         if(response.data.error) {
-          $scope.flash = Flash.create('success', response.data.error, 0, {class: 'alert alert-danger'}, true);
+          // $scope.flash = Flash.create('success', response.data.error, 0, {class: 'alert alert-danger'}, true);
+          flash.error = response.data.error;
+
         } else {
           $scope.markers.push({
             id: 0,
@@ -47,7 +49,7 @@
           } else {
             $scope.service_requests = [];
           }
-          Flash.clear();
+          flash.error = '';
         }
       };
 
