@@ -14,7 +14,7 @@ class AddressesController < ApplicationController
       @address = Address.find_or_create_by_address(AddressParams.build(params))
       @address.update_service_requests()
     rescue => error
-      render :json => { :errors => error.message }, :status => 422
+      render :json => { :error => error.message }, :status => 422
     end
   end
 

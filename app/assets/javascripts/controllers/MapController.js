@@ -22,33 +22,37 @@
       $scope.service_requests = false;
 
       var addressHandler = function(response) {
-        $scope.markers.push({
-          id: 0,
-          coords: {
+        if(response.data.error) {
+          $scope.flash = Flash.create('success', response.data.error, 0, {class: 'alert alert-danger'}, true);
+        } else {
+          $scope.markers.push({
+            id: 0,
+            coords: {
+              latitude: response.data.latitude,
+              longitude: response.data.longitude
+            },
+            options: {
+              draggable: false
+            },
+            events: {}
+          });
+          $scope.map.center = {
             latitude: response.data.latitude,
             longitude: response.data.longitude
-          },
-          options: {
-            draggable: false
-          },
-          events: {}
-        });
-        $scope.map.center = {
-          latitude: response.data.latitude,
-          longitude: response.data.longitude
-        };
-        $scope.map.zoom = 18;
-        if(response.data.service_requests && response.data.service_requests.length > 0) {
-          $scope.service_requests = response.data.service_requests;
-          $scope.complaint_types = requestTypeCount(response.data.service_requests);
-        } else {
-          $scope.service_requests = [];
+          };
+          $scope.map.zoom = 18;
+          if(response.data.service_requests && response.data.service_requests.length > 0) {
+            $scope.service_requests = response.data.service_requests;
+            $scope.complaint_types = requestTypeCount(response.data.service_requests);
+          } else {
+            $scope.service_requests = [];
+          }
+          Flash.clear();
         }
-        Flash.clear();
       };
 
-      var addressErrorHandler = function(response){
-        $scope.flash = Flash.create('success', response.data.errors, 0, {class: 'alert alert-danger'}, true);
+      var addressErrorHandler = function(response) {
+        $scope.flash = Flash.create('success', "Uh-oh, something went wrong...", 0, {class: 'alert alert-danger'}, true);
       };
 
       if ($routeParams.address) {
