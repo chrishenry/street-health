@@ -17,6 +17,8 @@
 //= require angular-route/angular-route
 //= require angular-resource/angular-resource
 //= require angular-animate/angular-animate
+//= require angular-loading-overlay/dist/angular-loading-overlay
+//= require angular-loading-overlay-http-interceptor/dist/angular-loading-overlay-http-interceptor
 //= require angular-rails-templates
 //= require angular-bootstrap
 //= require lodash/dist/lodash

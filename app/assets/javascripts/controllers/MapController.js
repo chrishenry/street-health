@@ -2,11 +2,11 @@
 (function() {
   var controllers;
 
-  controllers = angular.module('controllers', ['uiGmapgoogle-maps', 'ui.bootstrap', 'ngFlash']);
+  controllers = angular.module('controllers', ['uiGmapgoogle-maps', 'ui.bootstrap', 'ngFlash', 'bsLoadingOverlay']);
 
   controllers.controller("MapController", [
-    '$scope', '$routeParams', '$location', '$http', '$resource', '$interval', 'Flash',
-    function($scope, $routeParams, $location, $http, $resource, $interval, Flash) {
+    '$scope', '$routeParams', '$location', '$http', '$resource', '$interval', 'Flash', 'bsLoadingOverlayService',
+    function($scope, $routeParams, $location, $http, $resource, $interval, Flash, bsLoadingOverlayService) {
 
       var Address, requestTypeCount;
       Address = $resource('/addresses/show.json', {
@@ -22,7 +22,7 @@
         zoom: 13
       };
       $scope.markers = [];
-      $scope.service_requests = [];
+      $scope.service_requests = false;
 
       if ($routeParams.address) {
         $scope.address = $routeParams.address;
@@ -46,11 +46,11 @@
             longitude: response.data.longitude
           };
           $scope.map.zoom = 18;
-          if(response.data.service_requests.length > 0) {
+          if(response.data.service_requests && response.data.service_requests.length > 0) {
             $scope.service_requests = response.data.service_requests;
             $scope.complaint_types = requestTypeCount(response.data.service_requests);
           } else {
-            console.log("Show no SR msg")
+            $scope.service_requests = [];
           }
           Flash.clear();
         }, function(response){
