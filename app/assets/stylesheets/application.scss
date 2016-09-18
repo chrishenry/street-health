@@ -186,7 +186,7 @@ input {
 .service-requests {
   margin-top:15px;
   max-height: 366px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .btn-geolocate button {
