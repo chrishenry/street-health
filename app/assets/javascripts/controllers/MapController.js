@@ -2,7 +2,7 @@
 (function() {
   var controllers;
 
-  controllers = angular.module('controllers', ['uiGmapgoogle-maps', 'ui.bootstrap','bsLoadingOverlay', 'angular-flash.service', 'angular-flash.flash-alert-directive']);
+  controllers = angular.module('controllers', ['uiGmapgoogle-maps', 'ui.bootstrap', 'bsLoadingOverlay', 'angular-flash.service', 'angular-flash.flash-alert-directive']);
 
   controllers.controller("MapController", [
     '$scope', '$routeParams', '$location', '$http', '$resource', '$interval', 'flash', 'bsLoadingOverlayService',

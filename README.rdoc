@@ -5,7 +5,6 @@ Application to display 311 and other complaint data. Check up on an address's hi
 == Test Commands
 
 ```bash
-
 # Front end / angular tests
 bx rake teaspoon
 
@@ -27,4 +26,10 @@ heroku maintenance:on
 
 ```bash
 bx rake service_requests:update
+```
+
+== Deploy a branch other than master
+
+```bash
+git push heroku other-branch:master
 ```
