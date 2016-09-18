@@ -183,9 +183,21 @@ input {
 
 .angular-google-map-container { height: 400px; }
 
-#service-requests {
+.service-requests {
   margin-top:15px;
-  height: 366px;
-  overflow-y: scroll;
+  max-height: 366px;
+  overflow-y: auto;
 }
 
+.btn-geolocate button {
+  border-radius: 0px !important;
+}
+
+.service-request-empty {
+  background-color:#d3d3d3;
+  padding: 10px 15px 10px 0px;
+  border:1px solid transparent;
+  border-radius:4px;
+  text-align: center;
+  @include box_sizing;
+}

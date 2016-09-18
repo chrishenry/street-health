@@ -19,7 +19,7 @@ class Address < ActiveRecord::Base
     end
 
     if req_count < required_address_components.length
-      raise ArgumentError.new("Address doesn't have enough granularity")
+      raise ArgumentError.new("Hmmm, can't find that address. Try something like '324 Spring Street'")
     end
 
   end
@@ -86,9 +86,12 @@ class Address < ActiveRecord::Base
     service_requests = socrata.query_by_address(self.address.upcase)
 
     ActiveRecord::Base.logger.info "sr.len: #{service_requests.length}"
+    ActiveRecord::Base.logger.info service_requests
 
-    service_requests.each do |sr|
-      ServiceRequest.upsert(self.id, sr)
+    if service_requests.kind_of?(Array)
+      service_requests.each do |sr|
+        ServiceRequest.upsert(self.id, sr)
+      end
     end
 
   end

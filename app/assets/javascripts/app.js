@@ -2,7 +2,17 @@
 (function() {
   var receta;
 
-  receta = angular.module('receta', ['templates', 'ngAnimate', 'ngRoute', 'ngResource', 'controllers', 'uiGmapgoogle-maps']);
+  receta = angular.module('receta', ['templates', 'ngAnimate', 'ngRoute', 'ngResource', 'controllers', 'uiGmapgoogle-maps', 'ngFlash', 'bsLoadingOverlay', 'bsLoadingOverlayHttpInterceptor'])
+  .factory('allHttpInterceptor', function(bsLoadingOverlayHttpInterceptorFactoryFactory) {
+    return bsLoadingOverlayHttpInterceptorFactoryFactory();
+  })
+  .config(function($httpProvider) {
+    $httpProvider.interceptors.push('allHttpInterceptor');
+  }).run(function(bsLoadingOverlayService) {
+    bsLoadingOverlayService.setGlobalConfig({
+      templateUrl: 'loading-overlay-template.html'
+    });
+  });
 
   receta.config([
     '$routeProvider', function($routeProvider) {
