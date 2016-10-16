@@ -1,5 +1,20 @@
 require 'rails_helper'
 
 RSpec.describe ServiceRequest, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "update service requests" do
+    it 'should update last_sr_update' do
+
+      @time_now = Time.now
+      allow(Time).to receive(:now).and_return(@time_now)
+
+      VCR.use_cassette("geolocate", :record => :new_episodes, :allow_playback_repeats => true) do
+
+        @address = Address.find_or_create_by_address("324 spring st")
+        @address.update_service_requests()
+
+        expect(@address.last_sr_update).to eq(@time_now)
+
+      end
+    end
+  end
 end
