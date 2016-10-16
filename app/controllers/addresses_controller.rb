@@ -13,7 +13,7 @@ class AddressesController < ApplicationController
     begin
       @address = Address.find_or_create_by_address(AddressParams.build(params))
       @address.update_service_requests()
-    # TODO: be more specific when sending this error down.
+      # TODO: be more specific when sending this error down.
     rescue => error
       render :json => { :error => error.message }, :status => 422
     end
