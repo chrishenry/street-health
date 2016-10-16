@@ -1,6 +1,10 @@
 require 'pp'
 
 class Address < ActiveRecord::Base
+
+  STATUS_SR_UPDATE_SUCCESS = 1
+  STATUS_SR_UPDATE_USE_CACHE = 2
+
   has_many :service_requests
 
   before_save :upcase_address
@@ -77,7 +81,7 @@ class Address < ActiveRecord::Base
 
   end
 
-  # TODO: implement recency logic. If address has updated date of older than X, update service requests
+  # TODO: implement recency logic. If address has updated date of older than one day, update service requests
   def update_service_requests
     ActiveRecord::Base.logger.info "update_service_requests"
     ActiveRecord::Base.logger.info self.address
@@ -93,6 +97,11 @@ class Address < ActiveRecord::Base
         ServiceRequest.upsert(self.id, sr)
       end
     end
+
+    self.last_sr_update = Time.now
+    self.save
+
+    STATUS_SR_UPDATE_SUCCESS
 
   end
 
