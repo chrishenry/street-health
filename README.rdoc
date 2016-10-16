@@ -2,6 +2,8 @@
 
 Application to display 311 and other complaint data. Check up on an address's history of complaints.
 
+The source data for this app can be found at [Socrata's NYC 311](https://nycopendata.socrata.com/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9)
+
 == Test Commands
 
 ```bash
