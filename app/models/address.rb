@@ -1,6 +1,10 @@
 require 'pp'
 
 class Address < ActiveRecord::Base
+
+  STATUS_SR_UPDATE_SUCCESS = 1
+  STATUS_SR_UPDATE_USE_CACHE = 2
+
   has_many :service_requests
 
   before_save :upcase_address
@@ -77,10 +81,14 @@ class Address < ActiveRecord::Base
 
   end
 
-  # TODO: implement recency logic. If address has updated date of older than X, update service requests
   def update_service_requests
     ActiveRecord::Base.logger.info "update_service_requests"
     ActiveRecord::Base.logger.info self.address
+
+    # Don't update more than once a day, as socrata is only update once a day
+    if !self.last_sr_update.nil? and self.last_sr_update > Date.yesterday
+      return STATUS_SR_UPDATE_USE_CACHE
+    end
 
     socrata = SocrataService.new(Rails.application.config.socrata)
     service_requests = socrata.query_by_address(self.address.upcase)
@@ -93,6 +101,11 @@ class Address < ActiveRecord::Base
         ServiceRequest.upsert(self.id, sr)
       end
     end
+
+    self.last_sr_update = Time.now
+    self.save
+
+    STATUS_SR_UPDATE_SUCCESS
 
   end
 

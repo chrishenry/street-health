@@ -11,7 +11,11 @@ class SocrataService
 
   def query_by_address(address)
     begin
-      response = @client.get(@config[:dataset_id], {"$limit" => 50, :incident_address => address})
+      response = @client.get(@config[:dataset_id], {
+        "$limit" => 50,
+        "$order" => "created_date DESC",
+        :incident_address => address
+      })
     rescue Exception => e
       return e.message + " " + e.backtrace.inspect
     end

@@ -11,14 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160808025055) do
+ActiveRecord::Schema.define(version: 20161016211800) do
 
   create_table "addresses", force: :cascade do |t|
     t.string   "address"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.float    "latitude"
     t.float    "longitude"
+    t.datetime "last_sr_update"
   end
 
   create_table "service_requests", force: :cascade do |t|
