@@ -35,9 +35,9 @@
             </uib-accordion-heading>
 
             <table class="table table-hover table-striped">
-              <tr ng-repeat="sr in (filteredItems = (service_requests | filter:{complaint_type:type.type} | orderBy: 'created_at':true))">
+              <tr ng-repeat="sr in (filteredItems = (service_requests | filter:{complaint_type:type.type} | orderBy: 'created_date':true))">
                 <td>{{sr.complaint_type}}</td>
-                <td>{{sr.created_date | date:"MM/dd/yyyy h:mma" : timezone: 'UTC'}}</td>
+                <td>{{sr.created_date | date:"MM/dd/yyyy h:mm a" : timezone: 'UTC'}}</td>
               </tr>
             </table>
 
