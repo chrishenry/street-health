@@ -23,7 +23,7 @@ heroku maintenance:on
 
 heroku run rake db:migrate
 
-heroku maintenance:on
+heroku maintenance:off
 ```
 
 == Load the DB with last 24 hours of Service Requests
