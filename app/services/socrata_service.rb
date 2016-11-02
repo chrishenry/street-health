@@ -23,7 +23,7 @@ class SocrataService
 
   def query_from_created(date)
     begin
-      response = @client.get(@config[:dataset_id], {'$where' => 'created_date > "2016-08-13 12:00:00"'})
+      response = @client.get(@config[:dataset_id], {'$where' => "created_date > \"#{date}\""})
     rescue Exception => e
       puts e.message + " " + e.backtrace.inspect
     end
