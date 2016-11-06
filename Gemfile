@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'dotenv-rails'
 
-gem 'rails', '4.2.5.1'
+gem 'rails', '4.2.6'
 gem 'sass'
 
 # Use Bootstrap for frontend
