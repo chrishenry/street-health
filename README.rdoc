@@ -37,3 +37,13 @@ bx rake service_requests:update
 ```bash
 git push heroku other-branch:master
 ```
+
+== Renew the cert via lets encrypt
+
+Make sure aws creds are set properly.
+
+```bash
+cd infra
+./letsencrypt.sh
+heroku certs:update certs/blockquality.info/cert.pem certs/blockquality.info/privkey.pem
+```
