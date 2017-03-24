@@ -20,7 +20,7 @@ def log(msg, level='info'):
 
 def get_letsencrypt():
 
-    url = 'https://raw.githubusercontent.com/lukas2511/letsencrypt.sh/master/letsencrypt.sh'
+    url = 'https://raw.githubusercontent.com/lukas2511/dehydrated/master/dehydrated'
 
     r = requests.get(url)
 
@@ -109,6 +109,7 @@ if __name__ == "__main__":
     domains = load_domains()
     clear_certs_dir(domains)
     filename = get_letsencrypt()
+    run_letsencrypt("./%s --register --accept-terms" % filename)
     run_letsencrypt("./%s --cron" % filename)
 
 

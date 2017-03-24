@@ -123,11 +123,14 @@ def get_zone_id(domain):
 
 if __name__ == "__main__":
     hook = sys.argv[1]
+
+    if hook == 'exit_hook':
+        exit(0)
+
     domain = sys.argv[2]
-
     hosted_zone_id = get_zone_id(domain)
-
     print hosted_zone_id
+
     print hook
 
     if hook == "deploy_challenge" or hook == "clean_challenge":
